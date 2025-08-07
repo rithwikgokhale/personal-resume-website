@@ -1107,22 +1107,17 @@ input, select, textarea {
 /* BG */
 
 #bg {
-    -moz-animation: bg 60s linear infinite;
-    -webkit-animation: bg 60s linear infinite;
-    -ms-animation: bg 60s linear infinite;
-    animation: bg 60s linear infinite;
-    -moz-backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
+    will-change: transform;
+    transform: translateZ(0);
     backface-visibility: hidden;
-    -moz-transform: translate3d(0,0,0);
-    -webkit-transform: translate3d(0,0,0);
-    -ms-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+    perspective: 1000;
+    transform-style: preserve-3d;
+    
     background-color: #348cb2;
     background-image: url("images/overlay-bg.jpg");
     background-position: bottom left;
     background-repeat: repeat-x;
+    background-attachment: fixed;
     height: 100%;
     left: 0;
     opacity: 1;
@@ -1130,23 +1125,37 @@ input, select, textarea {
     top: 0;
     width: 300%;
     z-index: -1;
+    
+    animation: slideBackground 60s linear infinite;
+}
+
+@keyframes slideBackground {
+    from { transform: translate3d(0, 0, 0); }
+    to { transform: translate3d(-33.33%, 0, 0); }
+}
+
+/* Reduce animation work when modal is open */
+body.is-article-visible #bg {
+    animation-play-state: paused;
+    filter: blur(5px);
+    transition: filter 0.3s ease-out;
 }
 
 @-moz-keyframes bg { 
     0% { -moz-transform: translate3d(0,0,0); }
-    100% { -moz-transform: translate3d(-2250px,0,0); }
+    100% { -moz-transform: translate3d(-33.3333%,0,0); }
 }
 @-webkit-keyframes bg { 
     0% { -webkit-transform: translate3d(0,0,0); }
-    100% { -webkit-transform: translate3d(-2250px,0,0); }
+    100% { -webkit-transform: translate3d(-33.3333%,0,0); }
 }
 @-ms-keyframes bg { 
     0% { -ms-transform: translate3d(0,0,0); }
-    100% { -ms-transform: translate3d(-2250px,0,0); }
+    100% { -ms-transform: translate3d(-33.3333%,0,0); }
 }
 @keyframes bg { 
     0% { transform: translate3d(0,0,0); }
-    100% { transform: translate3d(-2250px,0,0); }
+    100% { transform: translate3d(-33.3333%,0,0); }
 }
 
 /* When modal is open, add blur to background */
@@ -1299,9 +1308,9 @@ body.is-article-visible #bg {
 				width: auto;
 				margin: 0 auto;
 				-moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
-				-webkit-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
-				-ms-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
-				transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+				-webkit-transition: max-height 0.75s ease, padding 0.75s ease-in-out, opacity 0.325s ease-in-out;
+				-ms-transition: max-height 0.75s ease, padding 0.75s ease-in-out, opacity 0.325s ease-in-out;
+				transition: max-height 0.75s ease, padding 0.75s ease-in-out, opacity 0.325s ease-in-out;
 				-moz-transition-delay: 0.25s;
 				-webkit-transition-delay: 0.25s;
 				-ms-transition-delay: 0.25s;
@@ -1892,4 +1901,77 @@ body.is-article-visible #bg {
 
 .resume-download .button i {
     margin-right: 0.5rem;
+}
+
+/* Blog Styles */
+#blog .blog-meta {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+#blog .blog-tags {
+    margin: 1rem 0;
+}
+
+#blog .tag {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.3rem 0.8rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    margin: 0.25rem;
+}
+
+#blog .blog-full {
+    display: none;
+    margin-top: 2rem;
+    padding: 2rem;
+    background: rgba(27, 31, 34, 0.85);
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#blog .blog-full.active {
+    display: block;
+}
+
+#blog .card .button {
+    margin-top: 1rem;
+}
+
+#blog .blog-subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1rem;
+    font-style: italic;
+    margin: 0.5rem 0 2rem 0;
+}
+
+#blog .callout {
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 3px solid rgba(255, 255, 255, 0.3);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+}
+
+#blog .code-example {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+#blog .code-example pre {
+    margin: 1rem 0;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+#blog .code-example code {
+    color: #e6e6e6;
+    background: none;
+    padding: 0;
 }

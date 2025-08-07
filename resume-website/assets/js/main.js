@@ -24,10 +24,22 @@
 			xxsmall:  [ null,      '360px'  ]
 		});
 
+	// Add background initialization tracking
+		var backgroundInitialized = false;
+		function initBackground() {
+			if (backgroundInitialized) return;
+			backgroundInitialized = true;
+
+			// Initialize background here if needed
+			// The existing CSS animations will continue to work
+			// This is a hook for any additional background effects
+		}
+
 	// Play initial animations on page load.
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
+				initBackground(); // Initialize background once
 			}, 100);
 		});
 
@@ -332,32 +344,29 @@
 			});
 
 			$window.on('hashchange', function(event) {
-
-				// Empty hash?
-					if (location.hash == ''
-					||	location.hash == '#') {
-
+				// Prevent unnecessary resets for empty hash
+				if (location.hash == '' || location.hash == '#') {
+					// Only hide if article is visible
+					if ($body.hasClass('is-article-visible')) {
 						// Prevent default.
-							event.preventDefault();
-							event.stopPropagation();
+						event.preventDefault();
+						event.stopPropagation();
 
 						// Hide.
-							$main._hide();
-
+						$main._hide();
 					}
+					return;
+				}
 
 				// Otherwise, check for a matching article.
-					else if ($main_articles.filter(location.hash).length > 0) {
+				else if ($main_articles.filter(location.hash).length > 0) {
+					// Prevent default.
+					event.preventDefault();
+					event.stopPropagation();
 
-						// Prevent default.
-							event.preventDefault();
-							event.stopPropagation();
-
-						// Show article.
-							$main._show(location.hash.substr(1));
-
-					}
-
+					// Show article.
+					$main._show(location.hash.substr(1));
+				}
 			});
 
 		// Scroll restoration.
@@ -397,3 +406,40 @@
 					});
 
 })(jQuery);
+
+// Blog functionality
+function initializeBlog() {
+    // Get all "Read More" buttons
+    const readMoreButtons = document.querySelectorAll('#blog .card .button');
+    
+    // Add click handlers to each button
+    readMoreButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const blogPost = document.querySelector(targetId);
+            
+            // Hide all blog posts
+            document.querySelectorAll('#blog .blog-full').forEach(post => {
+                post.classList.remove('active');
+            });
+            
+            // Show the selected blog post
+            if (blogPost) {
+                blogPost.classList.add('active');
+                // Smooth scroll to the blog post with offset for better visibility
+                setTimeout(() => {
+                    const yOffset = -20; // Offset from the top to give some breathing room
+                    const y = blogPost.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                    window.scrollTo({
+                        top: y,
+                        behavior: 'smooth'
+                    });
+                }, 100); // Small delay to ensure the post is visible first
+            }
+        });
+    });
+}
+
+// Initialize blog functionality after DOM loads
+window.addEventListener('load', initializeBlog);
