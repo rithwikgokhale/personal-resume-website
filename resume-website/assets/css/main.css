@@ -1975,3 +1975,84 @@ body.is-article-visible #bg {
     background: none;
     padding: 0;
 }
+
+/* Project Styles */
+#projects .project-meta {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+#projects .project-tech {
+    margin: 1rem 0;
+}
+
+#projects .project-tech .tag {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.3rem 0.8rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    margin: 0.25rem;
+}
+
+#projects .project-features {
+    margin: 1.5rem 0;
+}
+
+#projects .project-features h4 {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    margin: 0 0 1rem 0;
+}
+
+#projects .project-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#projects .project-features li {
+    position: relative;
+    padding-left: 1.5em;
+    margin: 0.5rem 0;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+#projects .project-features li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: bold;
+}
+
+#projects .project-links {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+#projects .project-links .button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#projects .project-links .button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+#projects .project-links .button i {
+    font-size: 1rem;
+}
