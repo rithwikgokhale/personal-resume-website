@@ -219,7 +219,7 @@
 							<div class="card-content">
 								<h3>Building Persona-Driven Demo Systems</h3>
 								<p class="blog-meta">August 2025</p>
-								<p>When you're trying to sell a complex industrial platform—whether it's a Manufacturing Execution System (MES), a digital workflow engine, or a mobile forms app—the real magic happens when you step into your buyer's shoes. Over the past year at Adatafy, I've built demo environments for three different platforms that our sales team now uses every week to win new clients...</p>
+								<p>Selling complex industrial platforms starts with real user needs. Over the past year at Adatafy, I built three demo environments that our sales team now uses every week to win new clients. Here’s what worked and why...</p>
 								<div class="blog-tags">
 									<span class="tag">Product Management</span>
 									<span class="tag">Demo Design</span>
@@ -233,7 +233,7 @@
 							<div class="card-content">
 								<h3>MES Systems 101: What Developers Should Know</h3>
 								<p class="blog-meta">August 2025</p>
-								<p>Manufacturing Execution Systems (MES) live at the critical junction between the shop floor and IT: collecting high-frequency sensor data, enforcing Standard Operating Procedures (SOPs), and feeding real-time dashboards for plant managers. Unlike typical web apps, MES must juggle millisecond-accurate timestamps, strict audit trails, and spotty network conditions...</p>
+								<p>Manufacturing Execution Systems sit between the shop floor and IT. They collect sensor data, enforce procedures, and power dashboards for plant teams. This post breaks down the basics in plain language and shares a few lessons I learned from real projects...</p>
 								<div class="blog-tags">
 									<span class="tag">MES</span>
 									<span class="tag">Technical</span>
@@ -263,7 +263,7 @@
 						<h3>Building Persona-Driven Demo Systems for Industrial Platforms</h3>
 						<p class="blog-meta">August 2025</p>
 						
-						<p>When you're trying to sell a complex industrial platform—whether it's a Manufacturing Execution System (MES), a digital workflow engine, or a mobile forms app—the real magic happens when you step into your buyer's shoes. Over the past year at Adatafy, I've built demo environments for three different platforms—Shiftconnector, Augmentir, and GoCanvas—that our sales team now uses every week to win new clients. Here's how I approached each one from the perspective of key personas, the core features I highlighted, and why those demos resonate in day-to-day operations.</p>
+						<p>Selling complex industrial software is less about showing every feature and more about solving real problems for specific people. Over the past year at Adatafy, I built demo environments for three platforms (Shiftconnector, Augmentir, and GoCanvas) that our sales team now uses every week. Here is how I approached each one from the viewpoint of key personas, the features I chose to highlight, and why the demos land in day to day operations.</p>
 
 						<h4>1. Understanding Each Platform's Strengths</h4>
 
@@ -295,7 +295,7 @@
 						</ul>
 
 						<h4>2. Putting Personas First</h4>
-						<p>Each demo starts by defining who we're talking to—and what pain they feel on a Monday morning:</p>
+						<p>Each demo starts by defining who we're talking to and what pain they feel on a Monday morning:</p>
 						
 						<table>
 							<tr>
@@ -339,7 +339,7 @@
 						<ul>
 							<li><strong>Step-by-Step Guidance:</strong> I built a procedure with inline images and an AR overlay (simulated in the demo) that highlights the exact valve bolts to remove.</li>
 							<li><strong>Skill-Routing Logic:</strong> The demo user logs in; Augmentir automatically assigns the task only if their profile has the required safety certification.</li>
-							<li><strong>Feedback Capture:</strong> At the end, the user can record a quick voice note suggesting a tweak—illustrating how continuous improvement gets fed back into the product team.</li>
+								<li><strong>Feedback Capture:</strong> At the end, the user can record a quick voice note suggesting a tweak, which illustrates how continuous improvement gets fed back into the product team.</li>
 						</ul>
 
 						<h5>C. GoCanvas Demo</h5>
@@ -355,9 +355,9 @@
 						<h4>4. Why This Approach Works</h4>
 						<ul>
 							<li><strong>Persona Empathy:</strong> By framing each session around a real user's daily struggles, prospects immediately see relevance.</li>
-							<li><strong>Use Case Authenticity:</strong> I research industry best practices—e.g., ethanol-plant interlock standards, packaging-line maintenance checklists—so the demo feels like "real work," not a toy.</li>
+							<li><strong>Use Case Authenticity:</strong> I research industry best practices (for example, ethanol plant interlock standards and packaging line maintenance checklists) so the demo feels like real work, not a toy.</li>
 							<li><strong>Feature Prioritization:</strong> Instead of overwhelming with every toggle and report, I showcase the three features each persona cares about most.</li>
-							<li><strong>Interactive & Measurable:</strong> Prospects can click through steps themselves and see how easy it is to gather data, generate reports, or escalate issues—building confidence and speeding decision-making.</li>
+							<li><strong>Interactive & Measurable:</strong> Prospects can click through steps themselves and see how easy it is to gather data, generate reports, or escalate issues, which builds confidence and speeds up decisions.</li>
 						</ul>
 
 						<h4>Conclusion</h4>
@@ -369,51 +369,51 @@
 						<p class="blog-meta">August 2025</p>
 						
 						<h4>Introduction</h4>
-						<p>Manufacturing Execution Systems (MES) live at the critical junction between the shop floor and IT: collecting high-frequency sensor data, enforcing Standard Operating Procedures (SOPs), and feeding real-time dashboards for plant managers. Unlike typical web apps, MES must juggle millisecond-accurate timestamps, strict audit trails, and spotty network conditions. In this post, we'll break down the core MES components in plain English—and then dive into three platforms I've worked with (Shiftconnector, AspenTech Inmation & Augmentir) to surface the hidden engineering lessons every developer should know.</p>
+						<p>Manufacturing Execution Systems live at the critical junction between the shop floor and IT. They collect high frequency sensor data, enforce Standard Operating Procedures, and power real time dashboards for plant managers. Unlike typical web apps, MES has to handle precise timestamps, strict audit trails, and uneven network conditions. In this post, I break down the core components in plain English and then dive into three platforms I've worked with (Shiftconnector, AspenTech Inmation, and Augmentir) to share the engineering lessons every developer should know.</p>
 
 						<h4>1. MES Core Components Explained</h4>
 
 						<h5>A. Data Ingestion & Historian</h5>
-						<p><strong>Role:</strong> Capture real-time streams from PLCs, SCADA, and IoT sensors—often hundreds of tags per second—and store them in a time-series database (TSDB).</p>
+							<p><strong>Role:</strong> Capture real time streams from PLCs, SCADA, and IoT sensors (often hundreds of tags per second) and store them in a time series database.</p>
 						<p><strong>Why It Matters:</strong> Precise, millisecond-aligned data is non-negotiable for troubleshooting, optimization, and regulatory compliance.</p>
 
 						<h5>B. Workflow / Procedure Engine</h5>
-						<p><strong>Role:</strong> Model SOPs as state machines. Operators can't skip steps, and every action (with user ID and timestamp) is logged.</p>
+							<p><strong>Role:</strong> Model SOPs as state machines. Operators cannot skip steps, and every action (with user ID and timestamp) is logged.</p>
 						<p><strong>Why It Matters:</strong> Regulated industries (pharma, energy, chemicals) require strict adherence to procedures—or face downtime, recalls, or fines.</p>
 
 						<h5>C. Analytics & Dashboards</h5>
-						<p><strong>Role:</strong> Transform raw events into KPIs—OEE (Overall Equipment Effectiveness), MTTR (Mean Time To Repair), batch yield, quality metrics, and more.</p>
+							<p><strong>Role:</strong> Transform raw events into KPIs such as OEE (Overall Equipment Effectiveness), MTTR (Mean Time To Repair), batch yield, quality metrics, and more.</p>
 						<p><strong>Why It Matters:</strong> Plant managers need instant visibility into performance and quality to drive continuous improvement.</p>
 
 						<h5>D. Integration & APIs</h5>
-						<p><strong>Role:</strong> Offer RESTful, OPC-UA, or proprietary connectors to ERP systems, historians (e.g. PI, Inmation), BI tools (Power BI, Tableau), and custom clients.</p>
+							<p><strong>Role:</strong> Offer REST, OPC UA, or proprietary connectors to ERP systems, historians (for example, PI and Inmation), BI tools (Power BI and Tableau), and custom clients.</p>
 						<p><strong>Why It Matters:</strong> MES rarely stands alone; seamless data exchange with upstream and downstream systems is essential.</p>
 
 						<h4>2. The Hidden Engineering Challenges</h4>
 						
 						<h5>High-Velocity Streams</h5>
 						<p><strong>Pitfall:</strong> Treat sensor updates like HTTP requests.</p>
-						<p><strong>Reality:</strong> Use event-driven architectures (Kafka, RabbitMQ) or specialized TSDBs to handle thousands of writes per second.</p>
+							<p><strong>Reality:</strong> Use event driven architectures (Kafka or RabbitMQ) or specialized time series databases to handle thousands of writes per second.</p>
 
 						<h5>Time Synchronization</h5>
 						<p><strong>Pitfall:</strong> Trust each device's local clock.</p>
-						<p><strong>Reality:</strong> Implement NTP/PTP across PLCs and servers. Convert all timestamps to a single source of truth for accurate traceability.</p>
+							<p><strong>Reality:</strong> Implement NTP or PTP across PLCs and servers. Convert all timestamps to a single source of truth for accurate traceability.</p>
 
 						<h5>Offline Resilience</h5>
 						<p><strong>Pitfall:</strong> Assume constant connectivity.</p>
-						<p><strong>Reality:</strong> Buffer events at the edge (browser, gateway) and retry submissions when the network returns, ensuring no data loss.</p>
+							<p><strong>Reality:</strong> Buffer events at the edge (browser or gateway) and retry submissions when the network returns to avoid data loss.</p>
 
 						<h5>Regulatory Audit Trails</h5>
 						<p><strong>Pitfall:</strong> Log only "success/failure."</p>
-						<p><strong>Reality:</strong> Capture detailed metadata—operator ID, before/after values, code versions, and change reasons—for every action.</p>
+							<p><strong>Reality:</strong> Capture detailed metadata for every action, including operator ID, before and after values, code versions, and change reasons.</p>
 
 						<h4>3. Platform Deep Dive</h4>
 
 						<h5>3.1 Shiftconnector: Digital Collaboration & Workflow Enforcement</h5>
-						<p><strong>What It Is:</strong> A shift-handover and collaboration tool that replaces paper logs and siloed emails with structured workflows and searchable handover records.</p>
+							<p><strong>What It Is:</strong> A shift handover and collaboration tool that replaces paper logs and siloed emails with structured workflows and searchable handover records.</p>
 						<p><strong>Core Strengths:</strong></p>
 						<ul>
-							<li>Workflow Engine: Enforces SOPs as state machines—operators can't skip or reorder steps.</li>
+							<li>Workflow Engine: Enforces SOPs as state machines so operators cannot skip or reorder steps.</li>
 							<li>Real-Time Collaboration: Centralized feed for shift logs, incident reporting, and formal handovers.</li>
 							<li>PLC/DCS Integration: Auto-trigger tasks or alerts when sensor thresholds are hit.</li>
 						</ul>
@@ -425,11 +425,11 @@
 						</ul>
 
 						<h5>3.2 AspenTech Inmation: The Industrial Data Fabric</h5>
-						<p><strong>What It Is:</strong> A scalable middleware that unifies real-time tag data, historical archives, and relational batch records into a single, secure platform.</p>
+							<p><strong>What It Is:</strong> A scalable middleware that unifies real time tag data, historical archives, and relational batch records into a single, secure platform.</p>
 						<p><strong>Core Strengths:</strong></p>
 						<ul>
 							<li>Unified Connectivity: Adapters for PLC/SCADA, OSIsoft PI, relational DBs, and more.</li>
-							<li>Dual Storage Layers: Raw time-series data in the TSDB; aggregated KPIs in relational tables.</li>
+							<li>Dual Storage Layers: Raw time series data in the TSDB and aggregated KPIs in relational tables.</li>
 							<li>Distributed & Secure: Enterprise-grade scaling with fine-grained access controls.</li>
 						</ul>
 						<p><strong>Developer Takeaways:</strong></p>
@@ -440,7 +440,7 @@
 						</ul>
 
 						<h5>3.3 Augmentir: AI-Powered Digital Workflows</h5>
-						<p><strong>What It Is:</strong> A no-code platform that transforms paper SOPs into interactive digital instructions, enhanced with AI and AR to guide frontline technicians.</p>
+							<p><strong>What It Is:</strong> A no code platform that transforms paper SOPs into interactive digital instructions, enhanced with AI and AR to guide frontline technicians.</p>
 						<p><strong>Core Strengths:</strong></p>
 						<ul>
 							<li>Drag-and-Drop Workflow Builder: Define steps, checks, media, and decision logic without coding.</li>
@@ -470,12 +470,12 @@
 						<p class="blog-subtitle">How clear, purpose-driven documentation accelerates team productivity</p>
 
 						<h4>Introduction</h4>
-						<p>We've all been there: a new tool lands in our stack, but the docs read like dense legalese or half-finished bullet points. The result? Frustrated developers, stalled projects, and endless "Do you know how this works?" Slack threads.</p>
+						<p>We have all been there: a new tool lands in the stack, but the docs read like legal fine print or half finished bullet points. The result is frustrated developers, stalled projects, and endless "Do you know how this works?" Slack threads.</p>
 						
-						<p>Over the past two years, I've owned the documentation for platforms like Shiftconnector, Augmentir, and GoCanvas—everything from onboarding guides and wikis to SOPs for critical workflows. I've hosted admin and key-user trainings to ensure teams get maximum ROI from these tools. In this post, I'll share the principles and practices that turned our docs from a clogged knowledge pipeline into an engine for speed and confidence.</p>
+						<p>Over the past two years, I've owned the documentation for platforms like Shiftconnector, Augmentir, and GoCanvas, covering onboarding guides, wikis, and SOPs for critical workflows. I also hosted admin and key user trainings to help teams get the most out of these tools. In this post, I share the principles and practices that turned our docs from a clogged knowledge pipeline into something that actually speeds teams up.</p>
 
 						<h4>1. Start with Your Audience: Personas, Not Features</h4>
-						<h5>Who's Reading?</h5>
+						<h5>Who is reading?</h5>
 						<ul>
 							<li>New Admins need a gentle ramp-up: account setup, permissions, high-level architecture.</li>
 							<li>Key Users (Ops, Maintenance, Quality) want task-specific quick wins: "How do I trigger an AR overlay?" or "Where do I find audit logs?"</li>
@@ -483,13 +483,13 @@
 						</ul>
 
 						<div class="callout">
-							<strong>Actionable Tip:</strong> Kick off each guide with a one-sentence "This doc is for…" line. It cuts confusion and sets expectations up front.
+							<strong>Actionable tip:</strong> Start each guide with a simple line like "This doc is for new admins setting up roles for the first time." It sets expectations up front.
 						</div>
 
 						<h4>2. Organize by Task, Not by Menu</h4>
 						
 						<h5>The Pitfall of Menu-Driven Docs</h5>
-						<p>Listing every dropdown and checkbox in the UI might feel thorough, but it's overwhelming. Users don't care about menus—they care about outcomes.</p>
+						<p>Listing every dropdown and checkbox in the UI might feel thorough, but it is overwhelming. Users care about outcomes, not menus.</p>
 
 						<h5>Task-Centered Structure</h5>
 						<ul>
@@ -520,7 +520,7 @@
 							</li>
 						</ul>
 
-						<p>By anchoring each section around a real goal, your reader dives straight into action without hunting for the right fragment.</p>
+						<p>By anchoring each section around a real goal, your reader can dive straight into action without hunting for the right fragment.</p>
 
 						<h4>3. Real-Life Example: Bypass Interlocks at an Ethanol Plant</h4>
 						<p>At one ethanol facility I support, safety interlocks require manual verification during certain maintenance windows. I developed an SOP document that walks operators through:</p>
@@ -532,11 +532,11 @@
 							<li><strong>Audit Review:</strong> Locating the final audit log entry and exporting it for regulatory reporting.</li>
 						</ol>
 
-						<p>Because the guide is task-focused and richly annotated, new shift leads can complete the bypass safely in under 5 minutes—down from 20 minutes of ad-hoc email exchanges and paper logs.</p>
+						<p>Because the guide is task focused and clearly annotated, new shift leads can complete the bypass safely in under 5 minutes, down from 20 minutes of ad hoc email exchanges and paper logs.</p>
 
 						<h4>4. Use Visuals and Code Side-by-Side</h4>
 
-						<h5>Why It Works</h5>
+						<h5>Why it works</h5>
 						<ul>
 							<li>Screenshots with Callouts bridge the gap between description and click-practice.</li>
 							<li>Code snippets paired with sample API requests let developers copy-paste and experiment immediately.</li>
@@ -560,18 +560,18 @@ POST /api/workflows/start
 						<h4>5. Create Living Docs with Version Control</h4>
 
 						<h5>The Challenge</h5>
-						<p>Static PDFs or wiki pages age quickly—especially in fast-moving environments where new features roll out weekly.</p>
+						<p>Static PDFs or wiki pages age quickly, especially in fast moving environments where new features roll out weekly.</p>
 
 						<h5>The Solution</h5>
 						<ul>
-							<li><strong>Doc-as-Code:</strong> Maintain markdown files in Git—same PR/review process as your code.</li>
-							<li><strong>Changelog Front and Center:</strong> At the top of each guide, include "What's Changed" so returning readers know what's new.</li>
-							<li><strong>Automated Publishing:</strong> Hook your docs repo into a static site generator (like Docusaurus) for instant updates.</li>
+						<li><strong>Doc as code:</strong> Maintain markdown files in Git with the same PR and review process as your code.</li>
+						<li><strong>Changelog front and center:</strong> Add a "What changed" section at the top of each guide so returning readers can see updates quickly.</li>
+						<li><strong>Automated publishing:</strong> Hook your docs repo into a static site generator like Docusaurus for instant updates.</li>
 						</ul>
 
 						<h4>6. Measure and Iterate</h4>
 
-						<h5>Metrics That Matter</h5>
+						<h5>Metrics that matter</h5>
 						<ul>
 							<li><strong>Time to First Success:</strong> How long does it take a new admin to complete initial setup?</li>
 							<li><strong>Support Ticket Volume:</strong> Which doc pages correlate with spikes in help requests?</li>
@@ -582,9 +582,9 @@ POST /api/workflows/start
 						<p>Embed quick feedback widgets or run short post-training surveys to uncover friction points. Then iterate documentation in your next sprint.</p>
 
 						<h4>Conclusion</h4>
-						<p>Great documentation isn't an afterthought—it's the superhighway connecting your product to the people who use it. By writing for specific personas, organizing around tasks, surfacing real-world examples like bypass interlocks in Shiftconnector, using visuals and living docs, and measuring impact, you transform confusion into clarity.</p>
+						<p>Great documentation is not an afterthought. It connects your product to the people who use it. By writing for specific personas, organizing around tasks, including real examples like bypass interlocks in Shiftconnector, using visuals and living docs, and measuring impact, you turn confusion into clarity.</p>
 						
-						<p>Whether you're rolling out a new workflow or building an API integration, invest in docs developers actually use—and watch your team accelerate beyond what you thought possible.</p>
+						<p>Whether you're rolling out a new workflow or building an API integration, invest in docs that developers actually use, and your team will move faster.</p>
 					</div>
 				</article>
 
