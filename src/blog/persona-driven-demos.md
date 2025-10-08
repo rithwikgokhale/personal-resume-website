@@ -1,5 +1,5 @@
 ---
-layout: base.njk
+layout: blog.njk
 title: "Building Persona-Driven Demo Systems for Industrial Platforms"
 date: 2025-08-01
 tags: ["Product Management", "Demo Design", "MES", "blog"]

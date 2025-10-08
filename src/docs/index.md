@@ -1,7 +1,6 @@
 ---
-layout: base.njk
+layout: docs.njk
 title: Website Technical Documentation
-noindex: true
 ---
 
 # Website Technical Documentation

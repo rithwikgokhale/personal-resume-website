@@ -1,5 +1,5 @@
 ---
-layout: base.njk
+layout: blog.njk
 title: "From Confusion to Clarity: Writing Docs That Developers Actually Use"
 date: 2025-08-03
 tags: ["Documentation", "Best Practices", "Developer Experience", "blog"]
