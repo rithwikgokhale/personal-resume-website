@@ -5,7 +5,7 @@
     <div class="card">
       <div class="card-content">
         <h3>{{ post.data.title }}</h3>
-        <p class="blog-meta">{{ post.date | date("MMMM yyyy") }}</p>
+        <p class="blog-meta">{{ post.date }}</p>
         <p>{{ post.data.excerpt }}</p>
         <div class="blog-tags">
           {% for tag in post.data.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
