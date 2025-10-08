@@ -1,0 +1,34 @@
+<article id="projects">
+  <h2 class="major">Projects</h2>
+  <div class="card-container">
+    {% for project in projects %}
+    <div class="card">
+      <div class="card-content">
+        <h3>{{ project.title }}</h3>
+        <p class="project-meta">{{ project.date }}</p>
+        <p>{{ project.description }}</p>
+        <div class="project-tech">
+          {% for t in project.tech %}<span class="tag">{{ t }}</span>{% endfor %}
+        </div>
+        {% if project.features and project.features | length %}
+        <div class="project-features">
+          <h4>Key Features:</h4>
+          <ul>
+            {% for f in project.features %}<li>{{ f }}</li>{% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+        {% if project.links.github %}
+        <div class="project-links">
+          <a href="{{ project.links.github }}" target="_blank" class="button">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</article>
+
+

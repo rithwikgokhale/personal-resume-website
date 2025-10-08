@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Product Management & Agile Skills",
+    "items": [
+      "Agile Scrum Methodology",
+      "Product Roadmapping (using Aha!, Jira, Confluence)",
+      "User Story Development",
+      "Feature Prioritization",
+      "Sprint Planning & Retrospectives",
+      "Cross-functional Stakeholder Management",
+      "Technical Documentation and Process Redesign"
+    ]
+  },
+  {
+    "title": "Software Development & Technical Skills",
+    "items": [
+      "Python (Data Analysis, Automation)",
+      "C# (Application Development)",
+      "Java (Core Development Concepts)",
+      "SQL (Database Management, Data Querying)",
+      "PowerShell (Scripting and Automation)",
+      "Unity (VR/AR Development)",
+      "Git, GitHub (Version Control)",
+      "Virtual Machine Deployment & Management (VMs)"
+    ]
+  },
+  {
+    "title": "Cloud & Emerging Technologies",
+    "items": [
+      "AWS EC2 (Cloud Server Deployment)",
+      "CloudXR (Cloud-based VR/AR Streaming)",
+      "REST API Integration",
+      "MES Systems (Shiftconnector, TrakSys, Inmation)"
+    ]
+  },
+  {
+    "title": "Data & Analytics Skills",
+    "items": [
+      "Tableau (Data Visualization and Reporting)",
+      "SQL for Data Analysis",
+      "Python Data Libraries (Pandas, Numpy)",
+      "A/B Testing and Experimental Design",
+      "User Research and Feedback Analysis"
+    ]
+  },
+  {
+    "title": "Communication & Leadership",
+    "items": [
+      "High Impact Presentations (Dale Carnegie Certified)",
+      "Client Communication and Technical Training",
+      "Webinar Hosting and Public Speaking",
+      "Podcast Development for Technical Topics"
+    ]
+  }
+]
+
+

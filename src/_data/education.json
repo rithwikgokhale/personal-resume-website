@@ -1,0 +1,42 @@
+{
+  "schools": [
+    {
+      "name": "Iowa State University",
+      "degree": "Bachelor of Science in Computer Engineering, Minor in Data Science",
+      "graduated": "May 2022",
+      "image": "/images/Iowa_State_University_seal.svg.png",
+      "paragraphs": [
+        "Gained expertise in software development, data analytics, and agile project management, including leading multiple app development projects from concept through delivery.",
+        "Developed strong foundations in product management methodologies by collaborating on interdisciplinary teams to build full-stack mobile and web applications."
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "High Impact Presentation Certification",
+      "issuer": "Dale Carnegie Training",
+      "year": 2024,
+      "link": "https://www.dalecarnegie.com/en/courses/191",
+      "image": "/images/High Impact Presentations.avif",
+      "alt": "Dale Carnegie Training",
+      "paragraphs": [
+        "Enhanced presentation and stakeholder communication skills, focusing on delivering clear, persuasive messaging to technical and non-technical audiences.",
+        "Learned advanced techniques for creating engaging presentations, driving stakeholder alignment, and effectively communicating complex project roadmaps."
+      ]
+    },
+    {
+      "title": "AI for Product Management Certification",
+      "issuer": "Mind the Product",
+      "year": 2025,
+      "link": "https://training.mindtheproduct.com/ai-for-product-management",
+      "image": "/images/ai for product management.png",
+      "alt": "Mind the Product - AI for Product Management",
+      "paragraphs": [
+        "Gained comprehensive understanding of AI technologies and their strategic implementation in product development and management.",
+        "Developed expertise in evaluating AI opportunities, managing AI-driven features, and making data-informed product decisions."
+      ]
+    }
+  ]
+}
+
+

@@ -1,0 +1,38 @@
+<article id="education">
+  <h2 class="major">Education</h2>
+  <div class="card-container">
+    {% for edu in education.schools %}
+    <div class="card">
+      <div class="card-image">
+        <img src="{{ edu.image }}" alt="{{ edu.name }}" />
+      </div>
+      <div class="card-content">
+        <h3>{{ edu.name }}</h3>
+        <h4>{{ edu.degree }}</h4>
+        <p>Graduated: {{ edu.graduated }}</p>
+        {% for p in edu.paragraphs %}<p>{{ p }}</p>{% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <h2 class="major">Certifications</h2>
+  <div class="card-container">
+    {% for cert in education.certifications %}
+    <div class="card">
+      <div class="card-image">
+        <a href="{{ cert.link }}" target="_blank">
+          <img src="{{ cert.image }}" alt="{{ cert.alt }}" />
+        </a>
+      </div>
+      <div class="card-content">
+        <h3>{{ cert.title }}</h3>
+        <h4>{{ cert.issuer }} ({{ cert.year }})</h4>
+        {% for p in cert.paragraphs %}<p>{{ p }}</p>{% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</article>
+
+

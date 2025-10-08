@@ -1,0 +1,14 @@
+{
+  "name": "personal-resume-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Rithwik Gokhale personal site built with Eleventy",
+  "scripts": {
+    "dev": "eleventy --input=src --output=_site --serve",
+    "build": "ELEVENTY_ENV=production eleventy --input=src --output=_site"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
+

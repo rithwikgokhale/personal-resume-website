@@ -1,0 +1,22 @@
+<article id="experience">
+  <h2 class="major">Experience</h2>
+  <div class="card-container">
+    {% for job in experience %}
+    <div class="card">
+      <div class="card-content">
+        <h3>{{ job.company }}</h3>
+        <h4>{{ job.title }}</h4>
+        <p class="job-meta">{{ job.dates }}</p>
+        <p class="job-location">{{ job.location }}</p>
+        <ul class="job-responsibilities">
+          {% for item in job.highlights %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</article>
+
+

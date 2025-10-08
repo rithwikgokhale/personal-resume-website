@@ -1,0 +1,17 @@
+<article id="skills">
+  <h2 class="major">Skills</h2>
+  <div class="card-container">
+    {% for group in skills %}
+    <div class="card">
+      <div class="card-content">
+        <h3>{{ group.title }}</h3>
+        <ul class="skills-list">
+          {% for s in group.items %}<li>{{ s }}</li>{% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</article>
+
+

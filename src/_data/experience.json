@@ -1,0 +1,51 @@
+[
+  {
+    "company": "Adatafy",
+    "title": "Software Engineer · Full-time",
+    "dates": "June 2022 - Present · 2 yrs 11 mos",
+    "location": "Schaumburg, Illinois, United States · Hybrid",
+    "highlights": [
+      "Led multiple 3–6 month long digital transformation initiatives across pharma, biofuels, and utilities sectors, managing end-to-end execution from discovery to deployment and client onboarding.",
+      "Defined product vision and digital roadmaps in collaboration with engineering, IT, and finance, delivering customized MES solutions aligned to client goals.",
+      "Facilitated Agile cadences and stakeholder syncs to resolve blockers and ensure timely, high-quality delivery across all client projects.",
+      "Built custom integrations across MES, virtual machines, and client environments using Python and PowerShell; reduced manual configuration time by 60% and improved deployment scalability.",
+      "Building internal SME-level expertise in a new partner platform by aligning its capabilities with common industry use cases and developing a demo system for sales enablement.",
+      "Leading the development of a standardized deployment methodology to guide future client implementations and position the platform for scalable success.",
+      "Presented at the Big Ten & Friends Utility Conference with Notre Dame leadership, highlighting MES deployment outcomes and impact on utility operations."
+    ]
+  },
+  {
+    "company": "NVIDIA",
+    "title": "Enterprise XR Technical Product Management Intern · Internship",
+    "dates": "May 2021 - Aug 2021 · 4 mos",
+    "location": "Santa Clara, California, United States · Remote",
+    "highlights": [
+      "Developed VR & AR prototype applications using Unity to demonstrate CloudXR's capabilities, presenting to 5 prospective customers and gathering insights that informed product strategy and feature prioritization, while showcasing the project to multiple internal teams for feedback and feature testing.",
+      "Managed the integration of Nvidia's CloudXR with a Swiss-based VR company's medical and surgery training app, aligning stakeholders and overcoming technical challenges to enable a university to adopt the technology for medical education without the need for heavy hardware investments.",
+      "Authored detailed user stories and designed an impactful product demo to communicate the value of new XR technologies to partners, directly contributing to the product roadmap and resulting in a featured blog post that increased visibility for Nvidia's CloudXR solutions among potential clients."
+    ]
+  },
+  {
+    "company": "Iowa State University",
+    "title": "Frontend Developer · Self-employed",
+    "dates": "Jan 2021 - Dec 2021 · 1 yr",
+    "location": "Ames, Iowa, United States · On-site",
+    "highlights": [
+      "Led the development of a full-stack mobile application that streamlined recipe websites by removing unnecessary content, resulting in 70% of users returning to the app for repeated use.",
+      "Authored a comprehensive design document outlining user requirements, feature prioritization, development roadmap, architecture diagrams, and testing strategies, guiding the team in building a user-centric mobile application."
+    ]
+  },
+  {
+    "company": "Dolby Laboratories",
+    "title": "IT Enterprise Apps Project Management Intern · Internship",
+    "dates": "Jan 2020 - Aug 2020 · 8 mos",
+    "location": "San Francisco Bay Area · Hybrid",
+    "highlights": [
+      "Integrated a new project management tool to identify workflow bottlenecks, reducing the need for cross-functional team meetings by 50% and improving overall project efficiency.",
+      "Redesigned the IT project management framework by implementing Agile methodologies, streamlining processes and reducing project delivery times by 30% across Finance, Marketing, and Legal departments.",
+      "Collaborated with a Senior Project Manager to define project requirements and develop a product roadmap for enterprise app solutions, aligning with business objectives and managing the end-to-end product lifecycle from conception to launch."
+    ]
+  }
+]
+
+

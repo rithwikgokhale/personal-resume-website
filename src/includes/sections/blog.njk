@@ -1,0 +1,20 @@
+<article id="blog">
+  <h2 class="major">Blog</h2>
+  <div class="card-container">
+    {% for post in collections.blog | reverse %}
+    <div class="card">
+      <div class="card-content">
+        <h3>{{ post.data.title }}</h3>
+        <p class="blog-meta">{{ post.date | date("MMMM yyyy") }}</p>
+        <p>{{ post.data.excerpt }}</p>
+        <div class="blog-tags">
+          {% for tag in post.data.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+        </div>
+        <a href="{{ post.url }}" class="button">Read More</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</article>
+
+

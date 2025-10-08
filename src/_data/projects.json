@@ -1,0 +1,19 @@
+[
+  {
+    "title": "Image AI Detector (Chrome Extension)",
+    "date": "January 2025",
+    "description": "A Chrome extension that analyzes images on web pages to detect whether they are AI-generated or real, providing confidence scores for each classification.",
+    "tech": ["Python", "JavaScript", "Chrome Extension", "Machine Learning", "Flask", "Hugging Face API"],
+    "features": [
+      "One-click analysis from browser popup",
+      "Real-time image classification with confidence scores",
+      "Visual overlays on detected images",
+      "Local Flask server integration with Hugging Face models",
+      "Graceful timeout handling for network issues",
+      "Easy setup for non-technical users"
+    ],
+    "links": {"github": "https://github.com/rithwikgokhale/image-ai-detector"}
+  }
+]
+
+

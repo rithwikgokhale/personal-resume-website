@@ -1,0 +1,32 @@
+<article id="contact">
+  <h2 class="major">Contact</h2>
+  <div class="card-container">
+    <div class="card">
+      <div class="card-content">
+        <h3>Email</h3>
+        <p><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></p>
+        <p class="contact-description">Feel free to reach out for professional opportunities, collaborations, or just to connect!</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <h3>Phone</h3>
+        <p><a href="tel:{{ contact.phonePlain }}">{{ contact.phone }}</a></p>
+        <p class="contact-description">Available during business hours (EST)</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <h3>Connect</h3>
+        <ul class="icons contact-icons">
+          <li><a href="{{ contact.linkedin }}" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+          <li><a href="{{ contact.github }}" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+          <li><a href="mailto:{{ contact.email }}" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+        <p class="contact-description">Let's connect and explore opportunities together!</p>
+      </div>
+    </div>
+  </div>
+</article>
+
+
