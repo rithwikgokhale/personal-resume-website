@@ -415,28 +415,33 @@ function initializeBlog() {
     // Add click handlers to each button
     readMoreButtons.forEach(button => {
         button.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const blogPost = document.querySelector(targetId);
-            
-            // Hide all blog posts
-            document.querySelectorAll('#blog .blog-full').forEach(post => {
-                post.classList.remove('active');
-            });
-            
-            // Show the selected blog post
-            if (blogPost) {
-                blogPost.classList.add('active');
-                // Smooth scroll to the blog post with offset for better visibility
-                setTimeout(() => {
-                    const yOffset = -20; // Offset from the top to give some breathing room
-                    const y = blogPost.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                    window.scrollTo({
-                        top: y,
-                        behavior: 'smooth'
-                    });
-                }, 100); // Small delay to ensure the post is visible first
+            const targetHref = this.getAttribute('href');
+
+            // If link is an anchor/hash to an in-page blog section, intercept
+            if (targetHref && targetHref.startsWith('#')) {
+                e.preventDefault();
+                const blogPost = document.querySelector(targetHref);
+                
+                // Hide all blog posts
+                document.querySelectorAll('#blog .blog-full').forEach(post => {
+                    post.classList.remove('active');
+                });
+                
+                // Show the selected blog post
+                if (blogPost) {
+                    blogPost.classList.add('active');
+                    // Smooth scroll to the blog post with offset for better visibility
+                    setTimeout(() => {
+                        const yOffset = -20; // Offset from the top to give some breathing room
+                        const y = blogPost.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                        window.scrollTo({
+                            top: y,
+                            behavior: 'smooth'
+                        });
+                    }, 100); // Small delay to ensure the post is visible first
+                }
             }
+            // Else (absolute or relative path), allow normal navigation to Eleventy page
         });
     });
 }
