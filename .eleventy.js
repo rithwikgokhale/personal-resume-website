@@ -10,6 +10,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addWatchTarget("resume-website/assets");
   eleventyConfig.addWatchTarget("resume-website/images");
 
+  // Create blog collection
+  eleventyConfig.addCollection("blog", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/blog/*.md");
+  });
+
   return {
     dir: {
       input: "src",
