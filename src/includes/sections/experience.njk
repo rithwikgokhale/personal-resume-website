@@ -6,7 +6,13 @@
       <div class="card-content">
         <h3>{{ job.company }}</h3>
         <h4>{{ job.title }}</h4>
-        <p class="job-meta">{{ job.dates }}</p>
+        <p class="job-meta">
+          {% if job.startDate %}
+            {{ job.dates }} · {{ job.startDate | calculateDuration(job.endDate) }}
+          {% else %}
+            {{ job.dates }}
+          {% endif %}
+        </p>
         <p class="job-location">{{ job.location }}</p>
         <ul class="job-responsibilities">
           {% for item in job.highlights %}
