@@ -28,48 +28,37 @@ Requirements: Node 18+
 
 ```bash
 npm install
-npm run dev    # starts Eleventy dev server
-# open the local URL Eleventy prints (usually http://localhost:8080)
+npm run dev
 ```
+
+Open the local URL Eleventy prints, usually http://localhost:8080.
 
 ## Build
 
 ```bash
-npm run build  # outputs the static site to _site/
+npm run build
 ```
+
+The build outputs the static site to `_site/`.
 
 ## Deploy (Netlify)
 
-- Build command: `npm run build`
-- Publish directory: `_site`
-- Node version: 18 (configured via `netlify.toml`)
+Netlify uses `npm run build` and publishes `_site`. The Node version is 18 as configured in `netlify.toml`.
 
 ## Content Editing
 
-- **Site meta and navigation**: `src/_data/site.json`, `src/_data/nav.json`
-- **About/Education/Experience/Projects/Skills/Contact**: JSON files in `src/_data/`
-- **Blog posts**: Markdown files in `src/blog/*.md` (use `layout: blog.njk`)
-- **Technical docs**: `src/docs/index.md` (uses `layout: docs.njk`)
+Site metadata and navigation live in `src/_data/site.json` and `src/_data/nav.json`. The About, Education, Experience, Projects, Skills, and Contact sections are JSON files in `src/_data/`. Blog posts are Markdown files in `src/blog/` and use `layout: blog.njk`. The technical docs live at `src/docs/index.md` and use `layout: docs.njk`.
 
 ## Features
 
 ### Layout Inheritance
-All layouts extend `base.njk` using Nunjucks block inheritance:
-- `base.njk` - Core HTML structure with blocks for `title`, `meta`, `main`, `scripts`
-- `blog.njk` - Extends base for blog posts (no SPA scripts, formatted date, tags)
-- `docs.njk` - Extends base for documentation (noindex, no SPA scripts)
+All layouts extend `base.njk` using Nunjucks block inheritance. `base.njk` holds the core HTML structure with blocks for title, meta, main, and scripts. `blog.njk` extends it for blog posts, adds formatted dates and tags, and avoids SPA scripts. `docs.njk` extends it for documentation, adds noindex, and also avoids SPA scripts.
 
 ### Blog System
-- **Date formatting**: Uses Luxon via `formatDate` filter (e.g., "August 1, 2025")
-- **Tags**: Posts can have tags in frontmatter; tag pages auto-generated at `/tags/`
-- **RSS Feed**: Available at `/feed.xml`
-- **Homepage**: Shows latest 6 posts; link to RSS feed
+Dates are formatted with the `formatDate` filter from Luxon and appear like "August 1, 2025". Tags are defined in front matter and tag pages are generated under `/tags/`. The RSS feed is available at `/feed.xml`. The home page shows the six most recent posts and links to the feed.
 
 ### Filters Available
-- `formatDate` - Format dates as "MMMM d, yyyy"
-- `dateToRfc3339` - ISO date format for feeds
-- `calculateDuration` - Calculate duration between dates (for experience)
-- `limit` - Limit array to first N items
+Available filters include `formatDate` for readable dates, `dateToRfc3339` for ISO feed dates, `calculateDuration` for experience durations, and `limit` for trimming lists.
 
 ## Security
 
@@ -77,6 +66,4 @@ All external links with `target="_blank"` include `rel="noopener noreferrer"` fo
 
 ## Notes
 
-- The homepage is a composed single page. Blog posts, docs, and tag pages render as separate routes.
-- Assets (CSS/JS/fonts/images) are copied via Eleventy passthrough from `resume-website/`.
-- The `blog` collection is sorted by date descending.
+The homepage is a composed single page while blog posts, docs, and tag pages render as separate routes. Assets such as CSS, JS, fonts, and images are copied via Eleventy passthrough from `resume-website/`. The blog collection is sorted by date in descending order.
