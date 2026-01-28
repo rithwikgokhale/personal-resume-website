@@ -2084,3 +2084,38 @@ body.is-article-visible #bg {
 #projects .project-links .button i {
     font-size: 1rem;
 }
+
+/* Blog Footer */
+#blog .blog-footer {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#blog .blog-footer .button.small {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+}
+
+/* Tag List (for /tags/ page) */
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.tag-list .tag {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.tag-list .tag:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}

@@ -3,28 +3,33 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% block meta %}
     {% if noindex %}
     <meta name="robots" content="noindex,follow" />
     {% endif %}
-    <title>{{ title or site.title }}</title>
+    {% endblock %}
+    <title>{% block title %}{{ title or site.title }}{% endblock %}</title>
     <link rel="stylesheet" href="/assets/css/main.css" />
     <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+    {% block head %}{% endblock %}
   </head>
-  <body class="is-preload">
+  <body class="{% block bodyClass %}is-preload{% endblock %}">
     <div id="wrapper">
       {% include "header.njk" %}
       <div id="main">
+        {% block main %}
         {{ content | safe }}
+        {% endblock %}
       </div>
       {% include "footer.njk" %}
     </div>
     <div id="bg"></div>
+    {% block scripts %}
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/browser.min.js"></script>
     <script src="/assets/js/breakpoints.min.js"></script>
     <script src="/assets/js/util.js"></script>
     <script src="/assets/js/main.js"></script>
+    {% endblock %}
   </body>
 </html>
-
-

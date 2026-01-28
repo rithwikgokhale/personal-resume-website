@@ -1,27 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ title }} - {{ site.title }}</title>
-    <meta name="robots" content="noindex,follow" />
-    <link rel="stylesheet" href="/assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
-  </head>
-  <body>
-    <div id="wrapper">
-      {% include "header.njk" %}
-      <div id="main">
-        <article class="active">
-          <h2 class="major">{{ title }}</h2>
-          {{ content | safe }}
-          <div class="docs-navigation">
-            <a href="/" class="button">← Back to Home</a>
-          </div>
-        </article>
-      </div>
-      {% include "footer.njk" %}
-    </div>
-    <div id="bg"></div>
-  </body>
-</html>
+{% extends "base.njk" %}
+
+{% block meta %}
+<meta name="robots" content="noindex,follow" />
+{% endblock %}
+
+{% block title %}{{ title }} - {{ site.title }}{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block main %}
+<article class="active">
+  <h2 class="major">{{ title }}</h2>
+  {{ content | safe }}
+  <div class="docs-navigation">
+    <a href="/" class="button">← Back to Home</a>
+  </div>
+</article>
+{% endblock %}
+
+{% block scripts %}
+{# No SPA scripts needed for docs - it's a standalone page #}
+{% endblock %}

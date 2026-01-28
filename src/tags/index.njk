@@ -1,0 +1,13 @@
+---
+layout: docs.njk
+title: Blog Tags
+permalink: /tags/
+---
+
+<p>Browse blog posts by topic:</p>
+
+<div class="tag-list">
+  {% for tag in collections.tagList %}
+  <a href="/tags/{{ tag | slugify }}/" class="tag">{{ tag }}</a>
+  {% endfor %}
+</div>

@@ -1,19 +1,24 @@
 <article id="blog">
   <h2 class="major">Blog</h2>
   <div class="card-container">
-    {% for post in collections.blog | reverse %}
+    {% for post in collections.blog | limit(6) %}
     <div class="card">
       <div class="card-content">
         <h3>{{ post.data.title }}</h3>
-        <p class="blog-meta">{{ post.date }}</p>
+        <p class="blog-meta">{{ post.date | formatDate }}</p>
         <p>{{ post.data.excerpt }}</p>
+        {% if post.data.tags %}
         <div class="blog-tags">
-          {% for tag in post.data.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+          {% for tag in post.data.tags %}{% if tag != "blog" %}<span class="tag">{{ tag }}</span>{% endif %}{% endfor %}
         </div>
+        {% endif %}
         <a href="{{ post.url }}" class="button">Read More</a>
       </div>
     </div>
     {% endfor %}
+  </div>
+  <div class="blog-footer">
+    <a href="/feed.xml" class="button small" rel="noopener noreferrer"><i class="fas fa-rss"></i> RSS Feed</a>
   </div>
 </article>
 

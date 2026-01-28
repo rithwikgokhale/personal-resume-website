@@ -1,27 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="/assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
-  </head>
-  <body>
-    <div id="wrapper">
-      {% include "header.njk" %}
-      <div id="main">
-        <article>
-          <h2 class="major">{{ title }}</h2>
-          <p class="blog-meta">{{ date }}</p>
-          {{ content | safe }}
-          <div class="blog-navigation">
-            <a href="/" class="button">← Back to Home</a>
-          </div>
-        </article>
-      </div>
-      {% include "footer.njk" %}
-    </div>
-    <div id="bg"></div>
-  </body>
-</html>
+{% extends "base.njk" %}
+
+{% block title %}{{ title }} - {{ site.title }}{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block main %}
+<article class="active">
+  <h2 class="major">{{ title }}</h2>
+  <p class="blog-meta">{{ date | formatDate }}</p>
+  {% if tags %}
+  <div class="blog-tags">
+    {% for tag in tags %}{% if tag != "blog" %}<span class="tag">{{ tag }}</span>{% endif %}{% endfor %}
+  </div>
+  {% endif %}
+  {{ content | safe }}
+  <div class="blog-navigation">
+    <a href="/#blog" class="button">← Back to Blog</a>
+  </div>
+</article>
+{% endblock %}
+
+{% block scripts %}
+{# No SPA scripts needed for blog posts - they're standalone pages #}
+{% endblock %}
