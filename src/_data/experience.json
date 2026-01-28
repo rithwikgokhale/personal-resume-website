@@ -1,53 +1,58 @@
 [
   {
-    "company": "Adatafy",
-    "title": "Software Engineer II · Full-time",
+    "company": "Adatafy (Novaspect)",
+    "title": "Software Engineer (Product & Systems Lead) · Full-time",
     "startDate": "2022-06",
     "endDate": null,
     "dates": "June 2022 - Present",
-    "location": "Schaumburg, Illinois, United States · Hybrid",
+    "location": "Schaumburg, Illinois · Hybrid",
     "highlights": [
-      "Led multiple 3–6 month long digital transformation initiatives across pharma, biofuels, and utilities sectors, managing end-to-end execution from discovery to deployment and client onboarding.",
-      "Defined product vision and digital roadmaps in collaboration with engineering, IT, and finance, delivering customized MES solutions aligned to client goals.",
-      "Facilitated Agile cadences and stakeholder syncs to resolve blockers and ensure timely, high-quality delivery across all client projects.",
-      "Built custom integrations across MES, virtual machines, and client environments using Python and PowerShell; reduced manual configuration time by 60% and improved deployment scalability.",
-      "Building internal SME-level expertise in a new partner platform by aligning its capabilities with common industry use cases and developing a demo system for sales enablement.",
-      "Leading the development of a standardized deployment methodology to guide future client implementations and position the platform for scalable success.",
-      "Presented at the Big Ten & Friends Utility Conference with Notre Dame leadership, highlighting MES deployment outcomes and impact on utility operations."
-    ]
+      "Led 3–6 month digital transformation initiatives across Pharma, Biofuels, and Utilities, owning discovery → delivery → deployment with clear milestones, risks, and stakeholder alignment.",
+      "Facilitated discovery workshops, process mapping, and requirement clarification with client SMEs; translated needs into epics, user stories, acceptance criteria, and phased release plans.",
+      "Architected and implemented OT/IT data integrations using Inmation middleware + custom code to normalize/sort industrial data across MES tools and enterprise systems.",
+      "Integrated MES platforms (Shiftconnector, Augmentir, Inmation) with SAP tools and broader ERP/CMMS/control-system environments via MES connectors, APIs, and database scripts where appropriate.",
+      "Built deployment automation and environment configuration tooling in Python + PowerShell across VMs and client environments; reduced manual configuration time by 60% and improved repeatability/scalability.",
+      "Added validation, logging, and health-check utilities to automation workflows to speed troubleshooting during cutovers and improve reliability across go-lives.",
+      "Ran Agile delivery cadence (planning, standups, demos, retros) and maintained Jira/Confluence artifacts (backlog hygiene, release notes, decision logs) to keep cross-functional execution unblocked.",
+      "Produced architecture diagrams and implementation documentation (MindManager diagrams, user guides, runbooks) to support onboarding, training, and long-term maintainability.",
+      "Led client-facing demos, executive readouts, and steering-committee style stakeholder meetings; bridged technical constraints to business outcomes and adoption decisions.",
+      "Drove UAT coordination, onboarding, and training; ensured implementations delivered real operational value (improved efficiency and reduced data errors), with every client returning for a Phase 2 expansion.",
+      "Built a demo/reference environment for a new partner platform by mapping capabilities to common industry use cases; enabled Sales through demos, solution narratives, and technical enablement content, plus external thought leadership (webinars/podcast) and conference presentation."
+    ],
+    "techStack": ["Python", "PowerShell", "SQL", "REST APIs", "Virtual Machines", "Inmation", "MES (Shiftconnector, Augmentir)", "SAP/ERP", "CMMS", "OT/Control Systems", "Git", "CI/CD", "Jira", "Confluence", "MindManager"]
   },
   {
     "company": "NVIDIA",
     "title": "Enterprise XR Technical Product Management Intern · Internship",
     "dates": "May 2021 - Aug 2021 · 4 mos",
-    "location": "Santa Clara, California, United States · Remote",
+    "location": "Santa Clara, California · Remote",
     "highlights": [
-      "Developed VR & AR prototype applications using Unity to demonstrate CloudXR's capabilities, presenting to 5 prospective customers and gathering insights that informed product strategy and feature prioritization, while showcasing the project to multiple internal teams for feedback and feature testing.",
-      "Managed the integration of Nvidia's CloudXR with a Swiss-based VR company's medical and surgery training app, aligning stakeholders and overcoming technical challenges to enable a university to adopt the technology for medical education without the need for heavy hardware investments.",
-      "Authored detailed user stories and designed an impactful product demo to communicate the value of new XR technologies to partners, directly contributing to the product roadmap and resulting in a featured blog post that increased visibility for Nvidia's CloudXR solutions among potential clients."
-    ]
-  },
-  {
-    "company": "Iowa State University",
-    "title": "Frontend Developer · Self-employed",
-    "dates": "Jan 2021 - Dec 2021 · 1 yr",
-    "location": "Ames, Iowa, United States · On-site",
-    "highlights": [
-      "Led the development of a full-stack mobile application that streamlined recipe websites by removing unnecessary content, resulting in 70% of users returning to the app for repeated use.",
-      "Authored a comprehensive design document outlining user requirements, feature prioritization, development roadmap, architecture diagrams, and testing strategies, guiding the team in building a user-centric mobile application."
-    ]
+      "Scoped and built Enterprise XR demo applications in Unity (C#) using CloudXR to enable internal validation and accelerate early stakeholder conversations in medical/enterprise contexts.",
+      "Validated smooth demo performance across local (developer machine) and AWS EC2 environments, demonstrating parity in the demo experience and minimizing perceived latency during presentations.",
+      "Partnered with a senior mentor to set up and troubleshoot cloud deployment workflows (environment setup, streaming checks, demo readiness) and unblock iteration velocity.",
+      "Gathered stakeholder feedback and translated it into a prioritized iteration plan, clarifying demo requirements, success criteria, and testing workflows.",
+      "Supported a VR medical training startup with CloudXR setup and integration, troubleshooting streaming/deployment issues and unblocking partner progress through hands-on technical enablement.",
+      "Coordinated with University of Utah Medical School contacts to align demo scenarios with real user needs and inform early partnership discussions.",
+      "Authored enablement notes and internal documentation (setup steps, test checklists, known issues) to reduce onboarding friction for internal teams and partners.",
+      "Contributed technical content for an NVIDIA blog post, synthesizing partner insights to clearly position CloudXR's value for immersive medical education."
+    ],
+    "techStack": ["Unity", "C#", "CloudXR", "AWS EC2", "Git"]
   },
   {
     "company": "Dolby Laboratories",
-    "title": "IT Enterprise Apps Project Management Intern · Internship",
+    "title": "Enterprise Apps Project Management Intern · Internship",
     "dates": "Jan 2020 - Aug 2020 · 8 mos",
-    "location": "San Francisco Bay Area · Hybrid",
+    "location": "San Francisco, California · Hybrid",
     "highlights": [
-      "Integrated a new project management tool to identify workflow bottlenecks, reducing the need for cross-functional team meetings by 50% and improving overall project efficiency.",
-      "Redesigned the IT project management framework by implementing Agile methodologies, streamlining processes and reducing project delivery times by 30% across Finance, Marketing, and Legal departments.",
-      "Collaborated with a Senior Project Manager to define project requirements and develop a product roadmap for enterprise app solutions, aligning with business objectives and managing the end-to-end product lifecycle from conception to launch."
-    ]
+      "Rolled out Aha! integrated with Jira and Confluence across Finance, Marketing, and Legal by leading requirements gathering, workflow design, admin configuration, and stakeholder training; reduced cross-team sync meetings by 50%.",
+      "Introduced Agile-lite delivery workflows (intake, prioritization, sprint cadence, retros) that reduced project cycle times by 30% and improved predictability.",
+      "Translated business needs into epics/user stories and acceptance criteria; coordinated with technical owners/admins to configure workflows and streamline recurring processes.",
+      "Built dashboards, custom views, and filters in Aha! to improve portfolio visibility (status, blockers, priorities), enabling IT managers and PMs to make more informed decisions.",
+      "Supported roadmap planning for enterprise IT applications from concept through post-launch evaluation and iteration, ensuring alignment across stakeholders.",
+      "Owned change management for adoption (documentation, office hours, communications), collecting feedback and iterating on processes to improve usability and consistency.",
+      "Standardized status reporting and operating rhythms to increase transparency into delivery health and reduce ambiguity for cross-functional stakeholders.",
+      "Documented process playbooks and governance guidelines for consistent usage across teams."
+    ],
+    "techStack": ["Aha!", "Jira", "Confluence", "Agile/Scrum", "Stakeholder Management", "Roadmapping", "Change Management"]
   }
 ]
-
-

@@ -1758,6 +1758,29 @@ body.is-article-visible #bg {
     color: rgba(255, 255, 255, 0.7);
 }
 
+/* Tech Stack styling for Experience */
+#experience .tech-stack {
+    margin: 1.5rem 0 0.5rem 0;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#experience .tech-stack strong {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.85rem;
+    margin-right: 0.5rem;
+}
+
+#experience .tech-stack .tag {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.25rem 0.6rem;
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    margin: 0.2rem;
+}
+
 /* Skills Section */
 .skills-list {
     list-style: none;

@@ -19,6 +19,14 @@
           <li>{{ item }}</li>
           {% endfor %}
         </ul>
+        {% if job.techStack %}
+        <div class="tech-stack">
+          <strong>Tech Stack:</strong>
+          {% for tech in job.techStack %}
+          <span class="tag">{{ tech }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
       </div>
     </div>
     {% endfor %}
