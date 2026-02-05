@@ -4,7 +4,7 @@ pagination:
   size: 1
   alias: tag
 permalink: /tags/{{ tag | slugify }}/
-layout: docs.njk
+layout: page.njk
 eleventyComputed:
   title: "Posts tagged '{{ tag }}'"
 ---

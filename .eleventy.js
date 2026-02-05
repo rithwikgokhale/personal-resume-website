@@ -91,6 +91,28 @@ module.exports = function(eleventyConfig) {
     return arr.slice(0, limit);
   });
 
+  // Slugify filter for tag URLs
+  eleventyConfig.addFilter("slugify", function(value) {
+    if (!value) return "";
+    return value
+      .toString()
+      .toLowerCase()
+      .trim()
+      .replace(/[\s\W-]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+  });
+
+  // Slugify filter for tag URLs
+  eleventyConfig.addFilter("slugify", function(value) {
+    if (!value) return "";
+    return value
+      .toString()
+      .toLowerCase()
+      .trim()
+      .replace(/[\s\W-]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+  });
+
   // ========================================
   // Shortcodes
   // ========================================

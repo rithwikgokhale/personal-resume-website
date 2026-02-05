@@ -1,0 +1,39 @@
+---
+layout: page.njk
+title: Blog
+pagination:
+  data: collections.blog
+  size: 5
+  alias: posts
+permalink: "/blog/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+---
+
+<div class="card-container">
+  {% for post in posts %}
+  <div class="card">
+    <div class="card-content">
+      <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+      <p class="blog-meta">{{ post.date | formatDate }}</p>
+      <p>{{ post.data.excerpt }}</p>
+      {% if post.data.tags %}
+      <div class="blog-tags">
+        {% for tag in post.data.tags %}{% if tag != "blog" %}<span class="tag">{{ tag }}</span>{% endif %}{% endfor %}
+      </div>
+      {% endif %}
+      <a href="{{ post.url }}" class="button">Read More</a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<div class="blog-footer">
+  <a href="/tags/" class="button small">Browse Tags</a>
+  <a href="/feed.xml" class="button small" rel="noopener noreferrer"><i class="fas fa-rss"></i> RSS Feed</a>
+</div>
+
+{% if pagination.pageCount > 1 %}
+<div class="blog-footer">
+  {% if pagination.href.previous %}<a class="button small" href="{{ pagination.href.previous }}">Newer Posts</a>{% endif %}
+  {% if pagination.href.next %}<a class="button small" href="{{ pagination.href.next }}">Older Posts</a>{% endif %}
+</div>
+{% endif %}

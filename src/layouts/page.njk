@@ -1,0 +1,16 @@
+{% extends "base.njk" %}
+
+{% block title %}{{ title }} - {{ site.title }}{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block main %}
+<article class="active">
+  <h2 class="major">{{ title }}</h2>
+  {{ content | safe }}
+</article>
+{% endblock %}
+
+{% block scripts %}
+{# No SPA scripts needed for standalone pages #}
+{% endblock %}
