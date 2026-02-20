@@ -1,5 +1,71 @@
 [
   {
+    "title": "Seller Ops Copilot",
+    "date": "AI Product Work Sample",
+    "description": "An AI-powered seller insights app that answers plain-English business questions using tool-calling and schema-validated outputs so recommendations stay data-grounded.",
+    "tech": ["React 19", "TypeScript", "Vite", "Tailwind CSS", "Express", "OpenAI GPT-4o", "Function Calling", "Zod"],
+    "features": [
+      "Natural-language Q&A for sales, inventory, and staffing decisions",
+      "Typed tool-calling pipeline that computes metrics instead of generating numbers",
+      "Zod-validated structured responses with source traceability",
+      "Neighborhood-context toggle for weather, events, and sentiment overlays",
+      "Saved insights flow and a dedicated technical documentation site"
+    ],
+    "links": {
+      "github": "https://github.com/rithwikgokhale/Seller-Ops-Copilot",
+      "demo": "https://rithwikgokhale.github.io/Seller-Ops-Copilot/"
+    }
+  },
+  {
+    "title": "Ads Integration Workbench (Android)",
+    "date": "Android Engineering Project",
+    "description": "A production-style Android workbench for testing and debugging ad network integrations with plugin-driven architecture, observability, and local telemetry analysis.",
+    "tech": ["Kotlin", "Android", "MVVM", "Room", "DataStore", "Gradle", "detekt", "ktlint"],
+    "features": [
+      "Plugin-based integration model for Mock, AdMob, Unity Ads, and AppLovin MAX",
+      "Debug console with event timeline, filtering, and deep event inspection",
+      "Exportable debug bundle with automatic credential redaction",
+      "Issue reproduction harness with timeout guards and failure injection toggles",
+      "Insights view for success rates, latency percentiles, and top error patterns"
+    ],
+    "links": {
+      "github": "https://github.com/rithwikgokhale/Ads-Integration-Workbench"
+    }
+  },
+  {
+    "title": "Dino Runner Kotlin",
+    "date": "Android Game Architecture Project",
+    "description": "A Chrome Dino-style endless runner built with a deterministic, testable game engine and clean Android architecture for reliable gameplay and strong engineering quality.",
+    "tech": ["Kotlin", "Jetpack Compose", "Material 3", "Hilt", "Coroutines", "Flow", "JUnit", "MockK"],
+    "features": [
+      "Pure Kotlin core game engine with no Android imports for high testability",
+      "Deterministic behavior using seeded random sources for reproducible tests",
+      "MVVM architecture with clear UI, domain, and data separation",
+      "Quality gates via unit tests, ktlint, detekt, and GitHub Actions",
+      "Gameplay systems including progressive speed, collisions, pause, and high-score persistence"
+    ],
+    "links": {
+      "github": "https://github.com/rithwikgokhale/ChromeDinoGame"
+    }
+  },
+  {
+    "title": "Personal Resume Website (Eleventy)",
+    "date": "Web Platform Project",
+    "description": "A content-driven personal site built on Eleventy with reusable Nunjucks layouts, structured data files, and Netlify deployment.",
+    "tech": ["Eleventy (11ty)", "Nunjucks", "Markdown", "JSON Data", "Netlify", "HTML5UP Assets"],
+    "features": [
+      "Layout inheritance with shared base templates for maintainability",
+      "Data-driven sections sourced from structured JSON files",
+      "Blog system with date formatting, tags, and feed support",
+      "Standalone docs and content pages integrated into the same build pipeline",
+      "Netlify deployment workflow with static build output"
+    ],
+    "links": {
+      "github": "https://github.com/rithwikgokhale/personal-resume-website",
+      "demo": "https://rithwikgokhale.netlify.app/"
+    }
+  },
+  {
     "title": "Image AI Detector (Chrome Extension)",
     "date": "January 2025",
     "description": "A Chrome extension that analyzes images on web pages to detect whether they are AI-generated or real, providing confidence scores for each classification.",

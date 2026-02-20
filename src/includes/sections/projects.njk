@@ -18,11 +18,18 @@
           </ul>
         </div>
         {% endif %}
-        {% if project.links.github %}
+        {% if project.links.github or project.links.demo %}
         <div class="project-links">
+          {% if project.links.github %}
           <a href="{{ project.links.github }}" target="_blank" rel="noopener noreferrer" class="button">
             <i class="fab fa-github"></i> View on GitHub
           </a>
+          {% endif %}
+          {% if project.links.demo %}
+          <a href="{{ project.links.demo }}" target="_blank" rel="noopener noreferrer" class="button">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+          {% endif %}
         </div>
         {% endif %}
       </div>
