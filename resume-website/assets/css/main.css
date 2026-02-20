@@ -1931,6 +1931,30 @@ body.is-article-visible #bg {
     margin-right: 0.5rem;
 }
 
+.resume-viewer {
+    margin: 1.5rem 0;
+}
+
+.resume-viewer p {
+    margin-bottom: 1rem;
+}
+
+.resume-viewer iframe {
+    width: 100%;
+    height: 75vh;
+    min-height: 600px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 736px) {
+    .resume-viewer iframe {
+        min-height: 480px;
+        height: 68vh;
+    }
+}
+
 /* Blog Styles */
 #blog .blog-meta {
     color: rgba(255, 255, 255, 0.7);
