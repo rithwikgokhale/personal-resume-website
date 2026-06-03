@@ -1,15 +1,25 @@
 [
   {
     "title": "Seller Ops Copilot",
-    "date": "AI Product Work Sample",
-    "description": "An AI-powered seller insights app that answers plain-English business questions using tool-calling and schema-validated outputs so recommendations stay data-grounded.",
-    "tech": ["React 19", "TypeScript", "Vite", "Tailwind CSS", "Express", "OpenAI GPT-4o", "Function Calling", "Zod"],
+    "date": "AI Product Work Sample · June 2026",
+    "description": "A neighborhood-aware seller insights app that answers plain-English operating questions with GPT-4o tool calling, deterministic business metrics, schema validation, and traceable recommendations.",
+    "tech": [
+      "React 19",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Express",
+      "OpenAI GPT-4o",
+      "Function Calling",
+      "Zod",
+      "Evals"
+    ],
     "features": [
-      "Natural-language Q&A for sales, inventory, and staffing decisions",
-      "Typed tool-calling pipeline that computes metrics instead of generating numbers",
-      "Zod-validated structured responses with source traceability",
-      "Neighborhood-context toggle for weather, events, and sentiment overlays",
-      "Saved insights flow and a dedicated technical documentation site"
+      "Plain-English Q&A for sales, inventory, staffing, weather, events, and neighborhood context",
+      "Typed tool-calling pipeline that computes metrics from JSON data instead of hallucinating numbers",
+      "Zod-validated structured outputs with required sources and assumptions surfaced in the UI",
+      "Context-gated neighborhood signals, max-round circuit breaker, low-temperature responses, and trace IDs for debugging",
+      "17/17 evaluation suite covering tool use, schema compliance, context gating, source fidelity, and recommendation quality"
     ],
     "links": {
       "github": "https://github.com/rithwikgokhale/Seller-Ops-Copilot",
@@ -17,16 +27,99 @@
     }
   },
   {
+    "title": "ResumeBuilder",
+    "date": "AI Workflow + LaTeX Automation Project",
+    "description": "A LaTeX-first resume and cover-letter system for AI coding agents that tailors content per job while keeping formatting locked, ATS-safe, truthful, and one page.",
+    "tech": [
+      "LaTeX",
+      "XeLaTeX",
+      "Bash",
+      "Cursor",
+      "Prompt Engineering",
+      "ATS Optimization",
+      "Markdown Docs"
+    ],
+    "features": [
+      "Locked LaTeX style layer separates visual formatting from editable resume content",
+      "Agent playbooks, fact bank, role personas, QA checklists, and approval-first prompts prevent invented claims",
+      "Per-job application folders generate tailored resume and cover-letter PDFs without changing the canonical baseline",
+      "Build scripts compile the canonical resume and application-specific PDFs from source-controlled templates",
+      "Documentation-driven workflow maps job descriptions to verified proof points before PDF generation"
+    ],
+    "links": {
+      "github": "https://github.com/rithwikgokhale/ResumeBuilder"
+    }
+  },
+  {
+    "title": "AI Content Detector for Chrome",
+    "date": "Chrome Extension · v1 Rebuild",
+    "description": "A privacy-first Chrome MV3 extension that scans visible images and selected text for AI-generation signals using local browser inference by default, with optional BYO-key boost providers.",
+    "tech": [
+      "TypeScript",
+      "React",
+      "Vite",
+      "Chrome MV3",
+      "Tailwind CSS",
+      "transformers.js",
+      "ONNX Runtime Web",
+      "WebGPU"
+    ],
+    "features": [
+      "Toolbar flow scans visible images and overlays AI/Real badges with confidence scores",
+      "Context-menu flow analyzes selected text and highlights likely AI passages",
+      "Local mode runs quantized ONNX models in an MV3 offscreen document with no backend or accounts",
+      "Optional boost mode calls user-configured Gemini, OpenAI, or Hugging Face providers directly from the browser",
+      "Dedicated product website and docs hub cover architecture, roadmap, contribution flow, and privacy model"
+    ],
+    "links": {
+      "github": "https://github.com/rithwikgokhale/image-ai-detector",
+      "demo": "https://aipicdetector.netlify.app/"
+    }
+  },
+  {
+    "title": "SnapOut",
+    "date": "iOS Privacy Utility",
+    "description": "An iPhone-first utility for importing official Snapchat Memories exports into Apple Photos while preserving dates and locations when possible, handling duplicates, and keeping all processing on-device.",
+    "tech": [
+      "SwiftUI",
+      "Swift Package Manager",
+      "PhotoKit",
+      "GRDB",
+      "ZIPFoundation",
+      "XcodeGen",
+      "iOS 17"
+    ],
+    "features": [
+      "Imports official Snapchat ZIP exports or extracted export folders into Apple Photos",
+      "Restores capture dates and locations where export metadata supports it",
+      "Creates a single master Snapchat Memories album for organized review",
+      "Checks duplicates against the full Photos library without automatic destructive deletion",
+      "No Snapchat login, backend, cloud processing, or media upload required"
+    ],
+    "links": {
+      "github": "https://github.com/rithwikgokhale/SnapOut"
+    }
+  },
+  {
     "title": "Ads Integration Workbench (Android)",
     "date": "Android Engineering Project",
-    "description": "A production-style Android workbench for testing and debugging ad network integrations with plugin-driven architecture, observability, and local telemetry analysis.",
-    "tech": ["Kotlin", "Android", "MVVM", "Room", "DataStore", "Gradle", "detekt", "ktlint"],
+    "description": "A production-style Android workbench for testing, debugging, and validating ad network integrations with plugin-driven architecture, observability, and local telemetry analysis.",
+    "tech": [
+      "Kotlin",
+      "Android",
+      "MVVM",
+      "Room",
+      "DataStore",
+      "Gradle",
+      "detekt",
+      "ktlint"
+    ],
     "features": [
-      "Plugin-based integration model for Mock, AdMob, Unity Ads, and AppLovin MAX",
-      "Debug console with event timeline, filtering, and deep event inspection",
-      "Exportable debug bundle with automatic credential redaction",
-      "Issue reproduction harness with timeout guards and failure injection toggles",
-      "Insights view for success rates, latency percentiles, and top error patterns"
+      "Extensible plugin model for Mock, AdMob, Unity Ads, and AppLovin MAX integrations",
+      "Integrations, Actions, Debug Console, and Insights tabs mirror real integration-debug workflows",
+      "Structured Room-backed event timeline with filters, deep event inspection, and local telemetry summaries",
+      "Debug bundle export captures events, app config, device info, recent errors, and redacted plugin credentials",
+      "Issue reproduction harness supports timeout guards, retry policy, bad config injection, offline guard, consent state, and simulated failures"
     ],
     "links": {
       "github": "https://github.com/rithwikgokhale/Ads-Integration-Workbench"
@@ -35,14 +128,24 @@
   {
     "title": "Dino Runner Kotlin",
     "date": "Android Game Architecture Project",
-    "description": "A Chrome Dino-style endless runner built with a deterministic, testable game engine and clean Android architecture for reliable gameplay and strong engineering quality.",
-    "tech": ["Kotlin", "Jetpack Compose", "Material 3", "Hilt", "Coroutines", "Flow", "JUnit", "MockK"],
+    "description": "A Chrome Dino-style endless runner built around a pure, deterministic Kotlin game engine and clean Android architecture for reliable gameplay and high testability.",
+    "tech": [
+      "Kotlin",
+      "Jetpack Compose",
+      "Material 3",
+      "Hilt",
+      "Coroutines",
+      "Flow",
+      "JUnit",
+      "MockK",
+      "Turbine"
+    ],
     "features": [
-      "Pure Kotlin core game engine with no Android imports for high testability",
-      "Deterministic behavior using seeded random sources for reproducible tests",
-      "MVVM architecture with clear UI, domain, and data separation",
-      "Quality gates via unit tests, ktlint, detekt, and GitHub Actions",
-      "Gameplay systems including progressive speed, collisions, pause, and high-score persistence"
+      "Pure Kotlin core engine has zero Android imports, making game logic portable and unit testable",
+      "Seeded random sources and injectable timing create reproducible obstacle patterns and deterministic tests",
+      "MVVM and clean architecture separate UI, domain, data, engine, repositories, audio, and haptics concerns",
+      "Gameplay systems include jumping physics, collisions, progressive speed, pause/resume, settings, and persisted high score",
+      "Quality gates cover unit tests, ktlint, detekt, assembleDebug, and GitHub Actions CI"
     ],
     "links": {
       "github": "https://github.com/rithwikgokhale/ChromeDinoGame"
@@ -51,35 +154,25 @@
   {
     "title": "Personal Resume Website (Eleventy)",
     "date": "Web Platform Project",
-    "description": "A content-driven personal site built on Eleventy with reusable Nunjucks layouts, structured data files, and Netlify deployment.",
-    "tech": ["Eleventy (11ty)", "Nunjucks", "Markdown", "JSON Data", "Netlify", "HTML5UP Assets"],
+    "description": "A content-driven personal site built on Eleventy with reusable Nunjucks layouts, structured data files, blog/docs pages, and Netlify deployment.",
+    "tech": [
+      "Eleventy (11ty)",
+      "Nunjucks",
+      "Markdown",
+      "JSON Data",
+      "Netlify",
+      "HTML5UP Assets"
+    ],
     "features": [
       "Layout inheritance with shared base templates for maintainability",
-      "Data-driven sections sourced from structured JSON files",
-      "Blog system with date formatting, tags, and feed support",
-      "Standalone docs and content pages integrated into the same build pipeline",
-      "Netlify deployment workflow with static build output"
+      "Data-driven home-page sections sourced from structured JSON files",
+      "Blog system with date formatting, tags, excerpts, and feed support",
+      "Standalone docs and content pages integrated into the same static build pipeline",
+      "Netlify deployment workflow with a production Eleventy build output"
     ],
     "links": {
       "github": "https://github.com/rithwikgokhale/personal-resume-website",
       "demo": "https://rithwikgokhale.netlify.app/"
     }
-  },
-  {
-    "title": "Image AI Detector (Chrome Extension)",
-    "date": "January 2025",
-    "description": "A Chrome extension that analyzes images on web pages to detect whether they are AI-generated or real, providing confidence scores for each classification.",
-    "tech": ["Python", "JavaScript", "Chrome Extension", "Machine Learning", "Flask", "Hugging Face API"],
-    "features": [
-      "One-click analysis from browser popup",
-      "Real-time image classification with confidence scores",
-      "Visual overlays on detected images",
-      "Local Flask server integration with Hugging Face models",
-      "Graceful timeout handling for network issues",
-      "Easy setup for non-technical users"
-    ],
-    "links": {"github": "https://github.com/rithwikgokhale/image-ai-detector"}
   }
 ]
-
-
