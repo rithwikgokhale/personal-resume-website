@@ -1,5 +1,32 @@
 [
   {
+    "title": "PharmaOps Copilot — Industrial AI Batch Deviation Agent",
+    "date": "June 2026",
+    "description": "An evidence-grounded AI copilot for pharma manufacturing batch deviation triage. A local-first React dashboard pairs with a guardrailed LLM agent over synthetic Batch B-104 data—events, time-series anomalies, work orders, and SOP sections—built on a CDF-ready architecture that mirrors Cognite Data Fusion concepts.",
+    "tech": [
+      "TypeScript / React",
+      "Python",
+      "Node.js / Express",
+      "GPT-4",
+      "RAG",
+      "Vite",
+      "Tailwind CSS",
+      "Vitest"
+    ],
+    "features": [
+      "Evidence-first copilot: assembles deterministic evidence packet before any LLM reasoning—every citation is traceable to real data",
+      "GxP-aware guardrails that decline release/safety decisions and route to QA, with a post-processor neutralizing overreaching phrasing",
+      "CDF-ready IDataProvider abstraction (LocalDataProvider → future CdfDataProvider) mirroring Cognite Data Fusion asset/time-series/activity models",
+      "12-case evaluation suite verifying required mentions, banned phrases, and expected evidence IDs",
+      "Runs fully without an OpenAI key in deterministic mode; LLM enriches narrative when a key is present",
+      "Scoped intents: triage, release-decision routing, maintenance review, shift handover, SOP reference, audience framing"
+    ],
+    "links": {
+      "github": "https://github.com/rithwikgokhale/PharmaOpsCopilot",
+      "demo": "https://rithwikgokhale.github.io/PharmaOpsCopilot/"
+    }
+  },
+  {
     "title": "Seller Ops Copilot",
     "date": "AI Product Work Sample · June 2026",
     "description": "A neighborhood-aware seller insights app that answers plain-English operating questions with GPT-4o tool calling, deterministic business metrics, schema validation, and traceable recommendations.",
