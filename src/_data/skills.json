@@ -1,76 +1,50 @@
 [
   {
-    "title": "Industrial AI & Agentic Solutions",
+    "title": "GenAI & Agents",
     "items": [
-      "LLM Integration (GPT-4, Claude, Gemini)",
-      "Retrieval-Augmented Generation (RAG)",
-      "Prompt Engineering & Prompt Chaining",
-      "Agentic AI Orchestration & Tool Use",
-      "Embeddings & Vector Search",
-      "Evidence-Grounded AI Design (deterministic evidence before LLM reasoning)",
-      "Guardrail Design for Mission-Critical / GxP Environments",
-      "LLM Evaluation Frameworks (eval suites, required-mention & banned-phrase tests)"
+      "Python",
+      "Prompt chaining",
+      "Embeddings and hybrid RAG",
+      "Evidence-first agents",
+      "Eval harnesses",
+      "GPT-4, Claude, and Gemini",
+      "Guardrails",
+      "MCP"
     ]
   },
   {
-    "title": "Industrial Data & Architecture",
+    "title": "Industrial Data & OT/IT",
     "items": [
-      "OT/IT/ET Data Unification & Contextualization",
-      "Industrial Knowledge Graph Concepts (assets, equipment, time series, activities)",
-      "MES Systems (Shiftconnector, Augmentir, TrakSys, Inmation)",
-      "Time-Series Data Modeling & Historian Integration (Inmation, OSIsoft PI)",
-      "REST API & OPC UA Integration",
-      "SAP/ERP & CMMS Integration",
-      "PLC/SCADA Data Ingestion",
-      "Scalable Architecture Design & Reference Architecture Documentation"
+      "MES, historians, CMMS, and SAP/ERP",
+      "Equipment logs and identity resolution",
+      "SaaS, on-prem, and hybrid deployments",
+      "ISA-88 / ISA-95 manufacturing context",
+      "Validation and GxP-aware workflows",
+      "Time series, events, and work orders"
     ]
   },
   {
-    "title": "Software Development & Technical Skills",
+    "title": "Field & Pre-Sales Engineering",
     "items": [
-      "Python (Data Analysis, Automation, Backend APIs)",
-      "TypeScript / React (Full-Stack Prototype Development)",
-      "C# (Application Development)",
-      "SQL (Database Management, Data Querying)",
-      "PowerShell (Scripting and Automation)",
-      "Node.js / Express (API Servers)",
-      "Git, GitHub (Version Control)",
-      "Virtual Machine Deployment & Management (VMs)"
+      "Technical discovery",
+      "Use-case workshops",
+      "Reference architectures",
+      "Fast AI prototyping",
+      "Client demos for operators, plant IT, and site directors",
+      "UAT, go-live, and hypercare",
+      "Field friction turned into product feedback"
     ]
   },
   {
-    "title": "Pre-Sales & Forward Deployed Engineering",
+    "title": "Engineering",
     "items": [
-      "Use Case Design & Workshop Facilitation",
-      "Fast AI Prototyping for Client Engagements",
-      "Reference Architecture & Demo Environment Development",
-      "Executive Briefings & C-Level Technical Storytelling",
-      "ROI Framing & Value-Driven Narratives",
-      "Technical Enablement Content (webinars, podcasts, conference talks)",
-      "Discovery-to-Deployment Ownership"
-    ]
-  },
-  {
-    "title": "Data & Analytics Skills",
-    "items": [
-      "Tableau (Data Visualization and Reporting)",
-      "SQL for Data Analysis",
-      "Python Data Libraries (Pandas, NumPy)",
-      "Industrial KPI Modeling (OEE, MTTR, batch yield)",
-      "A/B Testing and Experimental Design",
-      "User Research and Feedback Analysis"
-    ]
-  },
-  {
-    "title": "Communication & Leadership",
-    "items": [
-      "High Impact Presentations (Dale Carnegie Certified)",
-      "Client Communication and Technical Training",
-      "Agile Scrum Methodology",
-      "Product Roadmapping (Aha!, Jira, Confluence)",
-      "Cross-functional Stakeholder Management",
-      "Webinar Hosting and Public Speaking",
-      "Podcast Development for Technical Topics"
+      "TypeScript and JavaScript",
+      "PowerShell",
+      "SQL",
+      "REST APIs",
+      "Git and CI/CD",
+      "Postman",
+      "Jira"
     ]
   }
 ]

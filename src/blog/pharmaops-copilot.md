@@ -1,9 +1,9 @@
 ---
 layout: blog.njk
 title: "Why Industrial AI Needs Evidence First: Building PharmaOps Copilot"
-date: 2026-06-01
+date: 2026-09-20
 tags: ["Industrial AI", "LLM / GenAI", "Pharma Manufacturing", "RAG", "Agentic AI", "blog"]
-excerpt: "LLMs are powerful—but in pharma manufacturing, a confident hallucination can stop a batch release or trigger a false deviation escalation. I built PharmaOps Copilot to explore what a genuinely trustworthy industrial AI copilot looks like: evidence-first architecture, GxP-aware guardrails, a CDF-ready data abstraction, and a 12-case eval suite to keep it honest."
+excerpt: "PharmaOps Copilot contextualizes siloed MES, historian, CMMS, QMS, and engineering data, then answers deviation questions from a deterministic evidence packet. GPT-4, Claude, or Gemini only write the narrative. 21/21 evals, including jailbreak refusal."
 ---
 
 *How I built a CDF-ready, evidence-grounded copilot for pharma batch deviation triage*
@@ -39,11 +39,11 @@ This matters because industrial users need traceability. A sentence like "the pH
 
 ## How It Was Built
 
-### 1. Local-First Industrial Data Model
+### 1. Messy IT/OT/ET into one model
 
-The project uses synthetic JSON data as the local source of truth. I modeled the core objects around industrial concepts: assets, equipment, batches, deviations, events, work orders, time-series tags, and files. This makes the prototype easy to run locally while still reflecting how real industrial platforms organize operational data.
+The generator emits siloed MES, historian, CMMS, QMS, and engineering exports. A contextualization step resolves those exports into one JSON model and writes a join report a human can review. That is the part that matches real plants: the hard problem is identity, units, and clocks, not the chat box.
 
-The frontend talks to an `IDataProvider` abstraction. Today, that provider reads from local generated data. In a production version, the same interface could be backed by a `CdfDataProvider` that maps those concepts to Cognite Data Fusion assets, equipment, time series, activities, and files.
+The unified model is mapped the way a CDF deployment would be mapped: ISA-95 site/area/unit and ISA-88 batch structure, high-volume events as a Records-style stream, and the deviation itself as a `PharmaDeviation` extension. The app still runs locally through an `IDataProvider`. A `CdfDataProvider` is a stub, and the Toolkit YAML under `cdf/` is a module skeleton, not a deployed project.
 
 ### 2. React Dashboard + Express API
 
@@ -61,9 +61,13 @@ The evidence builder is the heart of the system. For each question, it gathers s
 
 The result is a bounded context window that is smaller, cleaner, and more trustworthy than dumping raw documents into a prompt.
 
-### 4. Retrieval and RAG
+### 4. Hybrid retrieval, three model providers, and MCP
 
-For SOP references, I implemented a lightweight keyword retriever over a small document set. This is intentionally simple for the bounded demo, but the architecture leaves room for vector retrieval and embeddings later. The important pattern is the same: retrieve grounded document sections first, then allow the copilot to summarize them with citations.
+SOP lookup is hybrid keyword plus TF-IDF over a bounded document set. There is no vector database. On CDF, the same job is Atlas `askDocument`. The evidence-packet contract does not change when the retriever changes.
+
+Narrative is optional. With no API key the copilot stays deterministic. With a key, the same packet can be rewritten by GPT-4, Claude, or Gemini. The user question and the packet are wrapped as data, with an instruction hierarchy so text inside a question or a document cannot override the system rules.
+
+The same tool families are also served from a local MCP server shaped like Industrial MCP: query, time-series datapoints, and document ask. `npm run export:atlas` writes an Atlas agent, skill, and CLI eval suite from the guardrails and eval cases.
 
 ### 5. Guardrails for GxP-Sensitive Work
 
@@ -73,15 +77,15 @@ The copilot is designed to avoid making release, safety, or final quality decisi
 
 ### 6. Evaluations
 
-I added a 12-case evaluation suite that checks for required mentions, banned phrasing, and expected evidence IDs. This gives the project a repeatable way to catch regressions when changing prompts, tools, retrieval logic, or guardrails.
+The suite is 21 cases, and they pass. They check required mentions, banned phrases, and expected evidence IDs, including adversarial jailbreak and prompt-injection attempts.
 
-For example, a good triage answer should mention the CIP delay, pH drift, temperature excursion, and relevant work orders. A bad answer would claim the batch is safe to release or cite an evidence ID that was never retrieved.
+A good triage answer has to mention the CIP delay, pH drift, temperature excursion, and the relevant work orders, and it has to cite IDs that were actually retrieved. A bad answer claims the batch is safe to release, or follows an instruction hidden in the question.
 
 ## Why It Is CDF-Ready
 
 One of the reasons I built the data layer as an abstraction is that industrial AI is only as strong as the contextualized data foundation underneath it. Cognite Data Fusion is built around that idea: connecting raw industrial data to assets, equipment, time series, activities, documents, and relationships so applications can reason over operational context instead of isolated tags.
 
-PharmaOps Copilot mirrors that pattern locally. The local data provider acts as a stand-in for the future CDF provider. Batch records can map to activities, equipment to asset hierarchy, signals to time series, SOPs to files, and deviations to domain-specific activities. That makes the project more than a one-off demo; it is a prototype for how an industrial agent could sit on top of a contextualized data platform.
+PharmaOps mirrors that locally, without a CDF tenant. ISA-88/95 views, a Records-style event stream, a `PharmaDeviation` extension, a local Industrial MCP server, and an Atlas agents-as-code export are all runnable from the repo. The project site walks through the architecture, the evals, and the field notes from building it: identity matching, units and clocks, policy guardrails, and evals-as-code. The value figures on that site are a worked discovery example, not a customer result.
 
 ## What I Learned
 

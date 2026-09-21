@@ -1,40 +1,30 @@
 [
   {
-    "company": "Adatafy (Novaspect)",
-    "title": "Software Engineer II · Full-time",
+    "company": "Adatafy / Novaspect",
+    "title": "Software Engineer II · Field Engineering & Industrial Solutions Architecture",
     "startDate": "2022-06",
     "endDate": null,
     "dates": "June 2022 - Present",
-    "location": "Schaumburg, Illinois · Hybrid",
+    "location": "Chicago, Illinois",
     "highlights": [
-      "Operated as a forward-deployed engineer across Pharma, Biofuels, and Utilities clients—owning discovery → architecture → deployment end-to-end, acting as the primary technical point of contact from first workshop to go-live.",
-      "Designed and presented reference architectures unifying siloed OT/IT/ET data into a single operational data layer using Inmation middleware; translated plant-floor complexity into clear executive narratives for steering-committee readouts.",
-      "Built an evidence-grounded AI copilot prototype for pharma batch deviation triage (PharmaOps Copilot): assembled deterministic evidence packets from events, time-series anomalies, work orders, and SOP sections before LLM reasoning, with GxP-aware guardrails and a 12-case evaluation suite.",
-      "Prototyped and demoed first-of-their-kind industrial AI use cases to prospective clients; bridged GenAI capabilities (RAG, prompt chaining, LLM orchestration) with real operational data to build executive confidence in agentic automation.",
-      "Architected and implemented OT/IT data integrations using Inmation middleware + custom Python code to normalize and contextualize industrial data across MES tools, historians, and enterprise systems.",
-      "Integrated MES platforms (Shiftconnector, Augmentir, Inmation) with SAP/ERP, CMMS, and control-system environments via REST APIs, MES connectors, and database scripts; reduced manual data-entry errors and improved cross-system traceability.",
-      "Facilitated discovery workshops, process mapping, and use case design with client SMEs; translated functional and non-functional requirements into epics, user stories, acceptance criteria, and phased release plans.",
-      "Built deployment automation and environment configuration tooling in Python + PowerShell across VMs and client environments; reduced manual configuration time by 60% and improved repeatability/scalability.",
-      "Ran Agile delivery cadence (planning, standups, demos, retros) and maintained Jira/Confluence artifacts (backlog hygiene, release notes, decision logs) to keep cross-functional execution unblocked.",
-      "Led client-facing demos, executive readouts, and steering-committee style stakeholder meetings; every client returned for a Phase 2 expansion.",
-      "Built demo/reference environments for partner platforms by mapping capabilities to common industry use cases; enabled Sales through demos, solution narratives, technical enablement content, webinars, podcast, and conference presentations."
+      "Delivered 10 enterprise industrial software implementations across pharma, biofuels, campus utilities, food, and chemicals for 30–150 users. Owned technical discovery, solution architecture, integrations, UAT/validation, go-live, training, and hypercare.",
+      "Unified siloed MES, historian, CMMS, SAP/ERP, and equipment-log data across SaaS, on-prem, and hybrid plants. Resolved mismatched asset IDs, duplicate events, and historian gaps with REST/JSON APIs, structured mapping, and system acceptance testing.",
+      "Led use-case workshops and 30–40 tailored technical demos per year for operators, plant IT/validation, and site directors. Translated functional and non-functional requirements into reference architectures, Jira backlogs, and phased rollouts.",
+      "Built Python and PowerShell deployment automation plus TypeScript/Python workflow functions (routing, validation, 20–55 unit tests per function). Cut manual setup effort by up to 60% and established reusable runbooks and deployment methodology.",
+      "Built LLM-powered SME assistants in Augmentir with prompt templates, knowledge structuring, and response guardrails. Channeled field friction into product requirements for vendor teams and reusable enablement for sales and field engineers."
     ],
     "techStack": [
       "Python",
-      "TypeScript / React",
-      "LLMs (GPT-4, Claude)",
-      "RAG / Embeddings",
+      "TypeScript",
       "PowerShell",
       "SQL",
-      "REST APIs",
-      "Inmation",
-      "MES (Shiftconnector, Augmentir)",
+      "REST/JSON APIs",
+      "MES",
+      "Historians",
+      "CMMS",
       "SAP/ERP",
-      "OT/Control Systems",
-      "Git",
-      "CI/CD",
-      "Jira",
-      "Confluence"
+      "LLMs",
+      "Jira"
     ]
   },
   {
@@ -43,14 +33,8 @@
     "dates": "May 2021 - Aug 2021 · 4 mos",
     "location": "Santa Clara, California · Remote",
     "highlights": [
-      "Scoped and built Enterprise XR demo applications in Unity (C#) using CloudXR to enable internal validation and accelerate early stakeholder conversations in medical/enterprise contexts.",
-      "Validated smooth demo performance across local (developer machine) and AWS EC2 environments, demonstrating parity in the demo experience and minimizing perceived latency during presentations.",
-      "Partnered with a senior mentor to set up and troubleshoot cloud deployment workflows (environment setup, streaming checks, demo readiness) and unblock iteration velocity.",
-      "Gathered stakeholder feedback and translated it into a prioritized iteration plan, clarifying demo requirements, success criteria, and testing workflows.",
-      "Supported a VR medical training startup with CloudXR setup and integration, troubleshooting streaming/deployment issues and unblocking partner progress through hands-on technical enablement.",
-      "Coordinated with University of Utah Medical School contacts to align demo scenarios with real user needs and inform early partnership discussions.",
-      "Authored enablement notes and internal documentation (setup steps, test checklists, known issues) to reduce onboarding friction for internal teams and partners.",
-      "Contributed technical content for an NVIDIA blog post, synthesizing partner insights to clearly position CloudXR's value for immersive medical education."
+      "Developed enterprise XR demos in Unity using CloudXR and AWS EC2, supporting internal testing, customer discovery, and product discussions with medical education stakeholders.",
+      "Supported a Swiss VR medical-training startup with CloudXR setup and integration, translating partner needs into technical enablement and helping initiate an early product partnership."
     ],
     "techStack": ["Unity", "C#", "CloudXR", "AWS EC2", "Git"]
   },
@@ -60,14 +44,8 @@
     "dates": "Jan 2020 - Aug 2020 · 8 mos",
     "location": "San Francisco, California · Hybrid",
     "highlights": [
-      "Rolled out Aha! integrated with Jira and Confluence across Finance, Marketing, and Legal by leading requirements gathering, workflow design, admin configuration, and stakeholder training; reduced cross-team sync meetings by 50%.",
-      "Introduced Agile-lite delivery workflows (intake, prioritization, sprint cadence, retros) that reduced project cycle times by 30% and improved predictability.",
-      "Translated business needs into epics/user stories and acceptance criteria; coordinated with technical owners/admins to configure workflows and streamline recurring processes.",
-      "Built dashboards, custom views, and filters in Aha! to improve portfolio visibility (status, blockers, priorities), enabling IT managers and PMs to make more informed decisions.",
-      "Supported roadmap planning for enterprise IT applications from concept through post-launch evaluation and iteration, ensuring alignment across stakeholders.",
-      "Owned change management for adoption (documentation, office hours, communications), collecting feedback and iterating on processes to improve usability and consistency.",
-      "Standardized status reporting and operating rhythms to increase transparency into delivery health and reduce ambiguity for cross-functional stakeholders.",
-      "Documented process playbooks and governance guidelines for consistent usage across teams."
+      "Integrated a project management platform across Finance, Marketing, and Legal teams, reducing cross-team sync meetings by 50%.",
+      "Introduced Agile workflows for internal IT delivery, reducing project cycle times by 30% and improving stakeholder alignment and release coordination."
     ],
     "techStack": ["Aha!", "Jira", "Confluence", "Agile/Scrum", "Stakeholder Management", "Roadmapping", "Change Management"]
   }

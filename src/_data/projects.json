@@ -1,25 +1,24 @@
 [
   {
-    "title": "PharmaOps Copilot — Industrial AI Batch Deviation Agent",
-    "date": "June 2026",
-    "description": "An evidence-grounded AI copilot for pharma manufacturing batch deviation triage. A local-first React dashboard pairs with a guardrailed LLM agent over synthetic Batch B-104 data—events, time-series anomalies, work orders, and SOP sections—built on a CDF-ready architecture that mirrors Cognite Data Fusion concepts.",
+    "title": "PharmaOps Copilot — CDF-ready industrial agent",
+    "date": "Updated September 2026",
+    "description": "A CDF-ready pharma deviation-triage prototype that contextualizes siloed IT/OT/ET exports into one model, then runs an evidence-first agent over that model. Synthetic Batch B-104 only. Not a validated GxP application.",
     "tech": [
       "TypeScript / React",
       "Python",
-      "Node.js / Express",
       "GPT-4",
-      "RAG",
-      "Vite",
-      "Tailwind CSS",
-      "Vitest"
+      "Claude",
+      "Gemini",
+      "Hybrid RAG",
+      "Industrial MCP",
+      "Atlas agents-as-code"
     ],
     "features": [
-      "Evidence-first copilot: assembles deterministic evidence packet before any LLM reasoning—every citation is traceable to real data",
-      "GxP-aware guardrails that decline release/safety decisions and route to QA, with a post-processor neutralizing overreaching phrasing",
-      "CDF-ready IDataProvider abstraction (LocalDataProvider → future CdfDataProvider) mirroring Cognite Data Fusion asset/time-series/activity models",
-      "12-case evaluation suite verifying required mentions, banned phrases, and expected evidence IDs",
-      "Runs fully without an OpenAI key in deterministic mode; LLM enriches narrative when a key is present",
-      "Scoped intents: triage, release-decision routing, maintenance review, shift handover, SOP reference, audience framing"
+      "Contextualizes siloed MES, historian, CMMS, QMS, and engineering exports into one model mapped to ISA-88/95, Records-style events, and a PharmaDeviation extension",
+      "Evidence-first agent: deterministic tools and hybrid RAG assemble citations before optional narrative from GPT-4, Claude, or Gemini",
+      "21/21 evals, including jailbreak and prompt-injection refusal, with release and safety decisions routed to human review",
+      "Exports Atlas agents-as-code YAML and serves Industrial MCP-shaped tools (query, time series, askDocument) without a CDF tenant",
+      "Field notes on identity resolution, units and clocks, policy guardrails, and evals-as-code"
     ],
     "links": {
       "github": "https://github.com/rithwikgokhale/PharmaOpsCopilot",
