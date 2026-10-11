@@ -6,7 +6,7 @@ tags: ["Industrial AI", "LLM / GenAI", "Pharma Manufacturing", "RAG", "Agentic A
 excerpt: "PharmaOps Copilot contextualizes siloed MES, historian, CMMS, QMS, and engineering data, then answers deviation questions from a deterministic evidence packet. GPT-4, Claude, or Gemini only write the narrative. 21/21 evals, including jailbreak refusal."
 ---
 
-*How I built a CDF-ready, evidence-grounded copilot for pharma batch deviation triage*
+*How I built an evidence-grounded copilot for pharma batch deviation triage*
 
 ## Introduction
 
@@ -43,7 +43,7 @@ This matters because industrial users need traceability. A sentence like "the pH
 
 The generator emits siloed MES, historian, CMMS, QMS, and engineering exports. A contextualization step resolves those exports into one JSON model and writes a join report a human can review. That is the part that matches real plants: the hard problem is identity, units, and clocks, not the chat box.
 
-The unified model is mapped the way a CDF deployment would be mapped: ISA-95 site/area/unit and ISA-88 batch structure, high-volume events as a Records-style stream, and the deviation itself as a `PharmaDeviation` extension. The app still runs locally through an `IDataProvider`. A `CdfDataProvider` is a stub, and the Toolkit YAML under `cdf/` is a module skeleton, not a deployed project.
+The unified model follows manufacturing structure a plant already recognizes: site, area, and unit, a batch, high-volume events, and the deviation as its own object. The app reads that model through a provider interface, so the demo can run on local files. It is a prototype on synthetic data, not a production deployment.
 
 ### 2. React Dashboard + Express API
 
@@ -63,11 +63,11 @@ The result is a bounded context window that is smaller, cleaner, and more trustw
 
 ### 4. Hybrid retrieval, three model providers, and MCP
 
-SOP lookup is hybrid keyword plus TF-IDF over a bounded document set. There is no vector database. On CDF, the same job is Atlas `askDocument`. The evidence-packet contract does not change when the retriever changes.
+SOP lookup is hybrid keyword plus TF-IDF over a bounded document set. There is no vector database. The evidence-packet contract stays the same if a later deployment swaps in a document tool on the customer's platform.
 
 Narrative is optional. With no API key the copilot stays deterministic. With a key, the same packet can be rewritten by GPT-4, Claude, or Gemini. The user question and the packet are wrapped as data, with an instruction hierarchy so text inside a question or a document cannot override the system rules.
 
-The same tool families are also served from a local MCP server shaped like Industrial MCP: query, time-series datapoints, and document ask. `npm run export:atlas` writes an Atlas agent, skill, and CLI eval suite from the guardrails and eval cases.
+The same tool families are also served from a local MCP server: query, time-series datapoints, and document ask. A script exports the agent, skill, and eval suite from the guardrails and eval cases, so the workflow can move beyond the demo UI.
 
 ### 5. Guardrails for GxP-Sensitive Work
 
@@ -81,11 +81,11 @@ The suite is 21 cases, and they pass. They check required mentions, banned phras
 
 A good triage answer has to mention the CIP delay, pH drift, temperature excursion, and the relevant work orders, and it has to cite IDs that were actually retrieved. A bad answer claims the batch is safe to release, or follows an instruction hidden in the question.
 
-## Why It Is CDF-Ready
+## Why the data layer is separate from the model
 
-One of the reasons I built the data layer as an abstraction is that industrial AI is only as strong as the contextualized data foundation underneath it. Cognite Data Fusion is built around that idea: connecting raw industrial data to assets, equipment, time series, activities, documents, and relationships so applications can reason over operational context instead of isolated tags.
+An industrial copilot is only as useful as the operational context underneath it. PharmaOps keeps that context explicit: assets, equipment, time series, events, work orders, and documents, joined before any narrative is written. The same tools can be served through an MCP-shaped interface and exported as agent configuration, so the workflow is not trapped in one demo screen.
 
-PharmaOps mirrors that locally, without a CDF tenant. ISA-88/95 views, a Records-style event stream, a `PharmaDeviation` extension, a local Industrial MCP server, and an Atlas agents-as-code export are all runnable from the repo. The project site walks through the architecture, the evals, and the field notes from building it: identity matching, units and clocks, policy guardrails, and evals-as-code. The value figures on that site are a worked discovery example, not a customer result.
+The project site walks through the architecture, the evals, and the notes from building it: identity matching, units and clocks, policy guardrails, and evals as code. Any value figures on that site are a worked discovery example, not a customer result.
 
 ## What I Learned
 

@@ -1,8 +1,8 @@
 [
   {
-    "title": "PharmaOps Copilot — CDF-ready industrial agent",
-    "date": "Updated September 2026",
-    "description": "A CDF-ready pharma deviation-triage prototype that contextualizes siloed IT/OT/ET exports into one model, then runs an evidence-first agent over that model. Synthetic Batch B-104 only. Not a validated GxP application.",
+    "title": "PharmaOps Copilot — Evidence-First Industrial Agent",
+    "date": "Prototype · 2026",
+    "description": "A local-first prototype for pharma batch-deviation triage. It contextualizes siloed plant exports into one model, then answers from a deterministic evidence packet. Synthetic Batch B-104 only. Not a validated GxP application.",
     "tech": [
       "TypeScript / React",
       "Python",
@@ -10,15 +10,15 @@
       "Claude",
       "Gemini",
       "Hybrid RAG",
-      "Industrial MCP",
-      "Atlas agents-as-code"
+      "Tool use",
+      "Evals"
     ],
     "features": [
-      "Contextualizes siloed MES, historian, CMMS, QMS, and engineering exports into one model mapped to ISA-88/95, Records-style events, and a PharmaDeviation extension",
-      "Evidence-first agent: deterministic tools and hybrid RAG assemble citations before optional narrative from GPT-4, Claude, or Gemini",
-      "21/21 evals, including jailbreak and prompt-injection refusal, with release and safety decisions routed to human review",
-      "Exports Atlas agents-as-code YAML and serves Industrial MCP-shaped tools (query, time series, askDocument) without a CDF tenant",
-      "Field notes on identity resolution, units and clocks, policy guardrails, and evals-as-code"
+      "Resolves siloed MES, historian, CMMS, QMS, and engineering exports into one operational model, with a reviewable join report for identity, units, and clocks",
+      "Evidence-first agent: deterministic tools and hybrid retrieval assemble citations before GPT-4, Claude, or Gemini write an optional narrative",
+      "21/21 evals, including jailbreak and prompt-injection refusal, with release and safety decisions left to a human reviewer",
+      "Same tools can be served through an MCP-shaped interface and exported as agent configuration, so the workflow is not locked to one demo UI",
+      "Build notes on identity matching, units and clocks, policy guardrails, and evals as code"
     ],
     "links": {
       "github": "https://github.com/rithwikgokhale/PharmaOpsCopilot",

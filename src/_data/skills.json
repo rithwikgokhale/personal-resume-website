@@ -1,50 +1,49 @@
 [
   {
-    "title": "GenAI & Agents",
+    "title": "Forward Deployed Delivery",
     "items": [
-      "Python",
-      "Prompt chaining",
-      "Embeddings and hybrid RAG",
-      "Evidence-first agents",
-      "Eval harnesses",
-      "GPT-4, Claude, and Gemini",
-      "Guardrails",
-      "MCP"
-    ]
-  },
-  {
-    "title": "Industrial Data & OT/IT",
-    "items": [
-      "MES, historians, CMMS, and SAP/ERP",
-      "Equipment logs and identity resolution",
+      "Discovery through hypercare",
+      "Concurrent customer rollouts",
       "SaaS, on-prem, and hybrid deployments",
-      "ISA-88 / ISA-95 manufacturing context",
-      "Validation and GxP-aware workflows",
-      "Time series, events, and work orders"
+      "UAT, validation, and go-live",
+      "Key-user and administrator training",
+      "Post-go-live support and runbooks",
+      "SSO / Active Directory troubleshooting"
     ]
   },
   {
-    "title": "Field & Pre-Sales Engineering",
+    "title": "Solutions Engineering",
     "items": [
-      "Technical discovery",
-      "Use-case workshops",
-      "Reference architectures",
-      "Fast AI prototyping",
-      "Client demos for operators, plant IT, and site directors",
-      "UAT, go-live, and hypercare",
-      "Field friction turned into product feedback"
+      "Technical discovery and workshops",
+      "Solution architecture and process mapping",
+      "30–40 tailored demos a year",
+      "REST/JSON APIs and Postman",
+      "SAP PM / ERP, CMMS, historians, and equipment logs",
+      "Field mapping, data cleanup, and migration",
+      "Value messaging and expansion scoping"
     ]
   },
   {
-    "title": "Engineering",
+    "title": "Product & Deployment",
     "items": [
-      "TypeScript and JavaScript",
-      "PowerShell",
-      "SQL",
-      "REST APIs",
-      "Git and CI/CD",
-      "Postman",
-      "Jira"
+      "User stories and acceptance criteria",
+      "Jira backlogs and phased release plans",
+      "Reusable configuration and deployment tools",
+      "One-click test products and QA gates",
+      "Field feedback turned into product requirements",
+      "Go-to-market messaging with sales",
+      "Feasibility studies and scope tradeoffs"
+    ]
+  },
+  {
+    "title": "Engineering & Applied AI",
+    "items": [
+      "TypeScript, JavaScript, Python, and PowerShell",
+      "SQL / T-SQL and SQL Server",
+      "Unit tests and system acceptance testing",
+      "LLM workflows, prompt templates, and guardrails",
+      "Tool-calling agents and eval harnesses",
+      "Git, CI/CD, Jira, and Confluence"
     ]
   }
 ]

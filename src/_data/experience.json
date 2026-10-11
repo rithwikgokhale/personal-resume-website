@@ -1,36 +1,37 @@
 [
   {
     "company": "Adatafy / Novaspect",
-    "title": "Software Engineer II · Field Engineering & Industrial Solutions Architecture",
+    "title": "Software Engineer II · Forward Deployed Delivery, Solutions & Product",
     "startDate": "2022-06",
     "endDate": null,
     "dates": "June 2022 - Present",
     "location": "Chicago, Illinois",
     "highlights": [
-      "Delivered 10 enterprise industrial software implementations across pharma, biofuels, campus utilities, food, and chemicals for 30–150 users. Owned technical discovery, solution architecture, integrations, UAT/validation, go-live, training, and hypercare.",
-      "Unified siloed MES, historian, CMMS, SAP/ERP, and equipment-log data across SaaS, on-prem, and hybrid plants. Resolved mismatched asset IDs, duplicate events, and historian gaps with REST/JSON APIs, structured mapping, and system acceptance testing.",
-      "Led use-case workshops and 30–40 tailored technical demos per year for operators, plant IT/validation, and site directors. Translated functional and non-functional requirements into reference architectures, Jira backlogs, and phased rollouts.",
-      "Built Python and PowerShell deployment automation plus TypeScript/Python workflow functions (routing, validation, 20–55 unit tests per function). Cut manual setup effort by up to 60% and established reusable runbooks and deployment methodology.",
-      "Built LLM-powered SME assistants in Augmentir with prompt templates, knowledge structuring, and response guardrails. Channeled field friction into product requirements for vendor teams and reusable enablement for sales and field engineers."
+      "Delivered about 10 end-to-end industrial software implementations across pharma, food, campus utilities, biofuels, and chemicals for sites of 30–150 users. Owned discovery, design, configuration, integrations, UAT, go-live, training, and hypercare, including 4–5 concurrent projects at peak, with two priority enterprise rollouts finished on deadline.",
+      "Led discovery with executives, client IT, vendors, plant managers, and lead operators. Turned operational workflows into process maps, solution architectures, Jira user stories, acceptance criteria, and phased rollouts. Delivered 30–40 tailored technical demos a year and supported expansion scoping. 8 of 10 customers returned for a second phase or extra work.",
+      "Led client-side use-case design and testing for the first Shiftconnector (Seqonis) to SAP PM integration, covering asset, material, maintenance-notification, and work-order data in operator workflows, and helped turn the first build into a reusable offering. Another engineer led the primary coding. Also connected Augmentir and GoCanvas to SAP/ERP, CMMS, historians, alarms/events, and equipment logs through REST/JSON APIs, validated in Postman and acceptance testing.",
+      "Wrote the core execution code for a one-click testing product at a Fortune 500 food manufacturer: about 50 tests across 11 functions connecting Augmentir, a central data fabric, and SAP/ERP. Coordinated dashboard, report, and email pieces with other engineers. The framework is used at several sites in the United States and Mexico.",
+      "Mapped source fields to destination fields, cleaned functional-location and asset data before import, and migrated historical data between historians. Built Python and PowerShell deployment automation, including bulk configuration, validation, and logging, cutting manual setup effort by up to 60%.",
+      "Built TypeScript/JavaScript and Python workflow functions for routing, validation, and UI behavior, with 20–55 unit tests per function. Built LLM-powered operator assistants with structured knowledge, prompt templates, and response guardrails, and an internal OCR document-extraction proof of concept. Escalated field feedback that became a vendor platform feature. Point person for the Shiftconnector (Seqonis) product line.",
+      "Owned post-go-live support across SaaS, on-prem, and hybrid deployments: SSO/Active Directory, API, workflow, reporting, and data issues, documented in runbooks. Trained key users and administrators, including day and night shifts, in person and remote."
     ],
     "techStack": [
       "Python",
       "TypeScript",
       "PowerShell",
-      "SQL",
-      "REST/JSON APIs",
-      "MES",
-      "Historians",
-      "CMMS",
-      "SAP/ERP",
-      "LLMs",
+      "SQL / T-SQL",
+      "REST APIs",
+      "SAP PM / ERP",
+      "Shiftconnector (Seqonis)",
+      "Augmentir",
+      "GoCanvas",
       "Jira"
     ]
   },
   {
     "company": "NVIDIA",
-    "title": "Enterprise XR Technical Product Management Intern · Internship",
-    "dates": "May 2021 - Aug 2021 · 4 mos",
+    "title": "Enterprise XR Technical Product Management Intern",
+    "dates": "May 2021 - August 2021 · 4 mos",
     "location": "Santa Clara, California · Remote",
     "highlights": [
       "Developed enterprise XR demos in Unity using CloudXR and AWS EC2, supporting internal testing, customer discovery, and product discussions with medical education stakeholders.",
@@ -40,13 +41,13 @@
   },
   {
     "company": "Dolby Laboratories",
-    "title": "Enterprise Apps Project Management Intern · Internship",
-    "dates": "Jan 2020 - Aug 2020 · 8 mos",
+    "title": "Enterprise Apps Project Management Intern",
+    "dates": "January 2020 - August 2020 · 8 mos",
     "location": "San Francisco, California · Hybrid",
     "highlights": [
-      "Integrated a project management platform across Finance, Marketing, and Legal teams, reducing cross-team sync meetings by 50%.",
-      "Introduced Agile workflows for internal IT delivery, reducing project cycle times by 30% and improving stakeholder alignment and release coordination."
+      "Led requirements and workflow standardization for an enterprise application rollout across Finance, Marketing, and Legal, reducing cross-team sync meetings by 50%.",
+      "Introduced Agile delivery for internal IT, reducing project cycle times by 30% and improving roadmap visibility, stakeholder alignment, and release coordination."
     ],
-    "techStack": ["Aha!", "Jira", "Confluence", "Agile/Scrum", "Stakeholder Management", "Roadmapping", "Change Management"]
+    "techStack": ["Aha!", "Jira", "Confluence", "Agile", "Stakeholder Management", "Roadmapping"]
   }
 ]
