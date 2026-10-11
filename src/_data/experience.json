@@ -34,8 +34,10 @@
     "dates": "May 2021 - August 2021 · 4 mos",
     "location": "Santa Clara, California · Remote",
     "highlights": [
-      "Developed enterprise XR demos in Unity using CloudXR and AWS EC2, supporting internal testing, customer discovery, and product discussions with medical education stakeholders.",
-      "Supported a Swiss VR medical-training startup with CloudXR setup and integration, translating partner needs into technical enablement and helping initiate an early product partnership."
+      "Developed Unity-based enterprise XR demos using NVIDIA CloudXR and AWS EC2, enabling internal testing and early product discussions with the University of Utah Medical School.",
+      "Provided technical enablement to a Swiss VR medical-training startup, helping configure CloudXR and align the platform with immersive medical-education workflows. That work helped initiate an early product partnership.",
+      "Synthesized partner and market insights into technical product content, including an NVIDIA blog post, on CloudXR’s value for enterprise healthcare and medical education.",
+      "Worked across product, engineering, and external partner stakeholders to validate enterprise XR use cases and identify platform requirements."
     ],
     "techStack": ["Unity", "C#", "CloudXR", "AWS EC2", "Git"]
   },
@@ -45,8 +47,10 @@
     "dates": "January 2020 - August 2020 · 8 mos",
     "location": "San Francisco, California · Hybrid",
     "highlights": [
-      "Led requirements and workflow standardization for an enterprise application rollout across Finance, Marketing, and Legal, reducing cross-team sync meetings by 50%.",
-      "Introduced Agile delivery for internal IT, reducing project cycle times by 30% and improving roadmap visibility, stakeholder alignment, and release coordination."
+      "Integrated a project-management platform across Finance, Marketing, and Legal, reducing recurring cross-functional sync meetings by about 50%.",
+      "Helped redesign enterprise IT project workflows using Agile practices, contributing to a 30% reduction in project cycle time.",
+      "Supported roadmap planning, cross-functional requirements gathering, rollout, and post-launch evaluation for internal IT applications.",
+      "Coordinated business and IT stakeholders to improve project visibility, ownership, and delivery consistency."
     ],
     "techStack": ["Aha!", "Jira", "Confluence", "Agile", "Stakeholder Management", "Roadmapping"]
   }

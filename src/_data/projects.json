@@ -14,11 +14,11 @@
       "Evals"
     ],
     "features": [
-      "Resolves siloed MES, historian, CMMS, QMS, and engineering exports into one operational model, with a reviewable join report for identity, units, and clocks",
-      "Evidence-first agent: deterministic tools and hybrid retrieval assemble citations before GPT-4, Claude, or Gemini write an optional narrative",
+      "Resolves siloed MES, historian, CMMS, QMS, and engineering exports into one operational model, with a reviewable join report for identity, units, clocks, duplicates, and unresolved records",
+      "Evidence-first agent: deterministic tools and hybrid keyword plus TF-IDF retrieval assemble citations before GPT-4, Claude, or Gemini write an optional narrative",
+      "Runs with no API key. A key only rewrites the narrative after the evidence packet exists",
       "21/21 evals, including jailbreak and prompt-injection refusal, with release and safety decisions left to a human reviewer",
-      "Same tools can be served through an MCP-shaped interface and exported as agent configuration, so the workflow is not locked to one demo UI",
-      "Build notes on identity matching, units and clocks, policy guardrails, and evals as code"
+      "Same tools can be served through a local MCP server and exported as agent configuration, so the workflow is not locked to the demo UI"
     ],
     "links": {
       "github": "https://github.com/rithwikgokhale/PharmaOpsCopilot",
@@ -28,7 +28,7 @@
   {
     "title": "Seller Ops Copilot",
     "date": "AI Product Work Sample · June 2026",
-    "description": "A neighborhood-aware seller insights app that answers plain-English operating questions with GPT-4o tool calling, deterministic business metrics, schema validation, and traceable recommendations.",
+    "description": "A work-sample copilot for small-business sellers. It answers plain-English operating questions with GPT-4o tool calling, six deterministic tools, Zod-validated outputs, and traceable recommendations. Metrics come from data, not free-text generation.",
     "tech": [
       "React 19",
       "TypeScript",
@@ -42,10 +42,10 @@
     ],
     "features": [
       "Plain-English Q&A for sales, inventory, staffing, weather, events, and neighborhood context",
-      "Typed tool-calling pipeline that computes metrics from JSON data instead of hallucinating numbers",
-      "Zod-validated structured outputs with required sources and assumptions surfaced in the UI",
-      "Context-gated neighborhood signals, max-round circuit breaker, low-temperature responses, and trace IDs for debugging",
-      "17/17 evaluation suite covering tool use, schema compliance, context gating, source fidelity, and recommendation quality"
+      "Six typed tools compute metrics from JSON. The model selects tools and cannot invent the numbers",
+      "Zod-validated structured outputs with required sources, confidence, and assumptions shown in the UI",
+      "Per-run tracing, x-trace-id debugging, and saved dev traces for replay",
+      "17/17 GPT-4o evals covering tool selection, schema validity, source coverage, numeric accuracy, context gating, and clarification when the question is underspecified"
     ],
     "links": {
       "github": "https://github.com/rithwikgokhale/Seller-Ops-Copilot",

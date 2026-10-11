@@ -2,48 +2,77 @@
   {
     "title": "Forward Deployed Delivery",
     "items": [
-      "Discovery through hypercare",
-      "Concurrent customer rollouts",
-      "SaaS, on-prem, and hybrid deployments",
-      "UAT, validation, and go-live",
-      "Key-user and administrator training",
-      "Post-go-live support and runbooks",
-      "SSO / Active Directory troubleshooting"
+      "Discovery, configuration, UAT, go-live, training, and hypercare",
+      "Concurrent customer rollouts and multi-site deployments",
+      "SaaS, on-prem, and hybrid environments",
+      "Validation protocols, test plans, and deployment checklists",
+      "Key-user, administrator, and operator training",
+      "Post-go-live support, incident triage, and runbooks",
+      "SSO / Active Directory troubleshooting",
+      "Windows VMs and on-prem server setups"
     ]
   },
   {
     "title": "Solutions Engineering",
     "items": [
-      "Technical discovery and workshops",
-      "Solution architecture and process mapping",
-      "30–40 tailored demos a year",
-      "REST/JSON APIs and Postman",
-      "SAP PM / ERP, CMMS, historians, and equipment logs",
-      "Field mapping, data cleanup, and migration",
-      "Value messaging and expansion scoping"
+      "Technical discovery and onsite workshops",
+      "Solution architecture, process maps, and integration patterns",
+      "30–40 tailored technical demos a year",
+      "REST/JSON APIs, Postman, and end-to-end acceptance testing",
+      "SAP PM / ERP, CMMS, historians, alarms, and equipment logs",
+      "Source-to-destination field mapping and historical data migration",
+      "Value messaging, feasibility studies, and expansion scoping"
     ]
   },
   {
     "title": "Product & Deployment",
     "items": [
-      "User stories and acceptance criteria",
-      "Jira backlogs and phased release plans",
+      "User stories, acceptance criteria, and Jira backlogs",
+      "Phased release plans and roadmap support",
       "Reusable configuration and deployment tools",
       "One-click test products and QA gates",
       "Field feedback turned into product requirements",
-      "Go-to-market messaging with sales",
-      "Feasibility studies and scope tradeoffs"
+      "Go-to-market messaging with sales and marketing",
+      "Scope tradeoffs and stakeholder prioritization",
+      "Agile/Scrum, Confluence, and Aha!"
     ]
   },
   {
-    "title": "Engineering & Applied AI",
+    "title": "Enterprise Data & Platforms",
+    "items": [
+      "SQL Server administration and T-SQL reporting",
+      "Joins, date filters, aggregations, and data validation",
+      "MongoDB for a separate industrial-data use case",
+      "Shiftconnector (Seqonis), Augmentir, and GoCanvas",
+      "AspenTech Inmation",
+      "MES, connected-worker, and shift-handover workflows",
+      "SOP and logbook digitization",
+      "Audit-facing exports and compliance-aware requirements"
+    ]
+  },
+  {
+    "title": "Applied AI",
+    "items": [
+      "LLM tool calling and deterministic tools",
+      "Prompt templates and knowledge structuring",
+      "Response guardrails and human review boundaries",
+      "Hybrid retrieval and evidence packets",
+      "Eval harnesses and structured outputs",
+      "Zod schema validation and request tracing",
+      "GPT-4, Claude, and Gemini",
+      "Python and PowerShell automation"
+    ]
+  },
+  {
+    "title": "Engineering",
     "items": [
       "TypeScript, JavaScript, Python, and PowerShell",
-      "SQL / T-SQL and SQL Server",
-      "Unit tests and system acceptance testing",
-      "LLM workflows, prompt templates, and guardrails",
-      "Tool-calling agents and eval harnesses",
-      "Git, CI/CD, Jira, and Confluence"
+      "SQL / T-SQL, Java, and C#",
+      "React, Vite, Express, and Node.js",
+      "Unit testing and system acceptance testing",
+      "Git, GitHub, and CI/CD",
+      "AWS EC2",
+      "Kotlin, Swift, and Unity for side projects and the NVIDIA internship"
     ]
   }
 ]
